@@ -1050,7 +1050,7 @@
                 <button
                   type="submit"
                   id="submitBtn"
-                  class="btn-gold-solid w-full py-4 text-xs uppercase flex items-center justify-center gap-2 cursor-pointer rounded-none"
+                  class="btn-gold-solid w-full py-4 text-xs uppercase flex items-center justify-center gap-2 cursor-pointer rounded-none disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   <span id="btnText">Xác nhận tham dự</span>
                   <span id="btnSpinner" class="hidden">
@@ -1060,6 +1060,7 @@
                     </svg>
                   </span>
                 </button>
+                <p id="submitError" class="hidden text-xs text-red-700 text-center mt-2.5"></p>
               </div>
 
             </form>
@@ -1182,8 +1183,16 @@
         revealEls.forEach((el) => el.classList.add('is-visible'));
       }
 
-      // Form Validation & Local Session Storage
+      // =====================================================================
+      // CẤU HÌNH ĐỒNG BỘ GOOGLE SHEET (GOOGLE APPS SCRIPT WEB APP URL)
+      // Dán đường dẫn https://script.google.com/macros/s/.../exec vào bên dưới:
+      // =====================================================================
+      const GOOGLE_SCRIPT_URL = '';
+
+      // Form Validation & Google Sheets Sync
       const form = document.getElementById('registrationForm');
+      const submitBtn = document.getElementById('submitBtn');
+      const submitError = document.getElementById('submitError');
       const modal = document.getElementById('successModal');
       const closeModalBtn = document.getElementById('closeModalBtn');
       const doneModalBtn = document.getElementById('doneModalBtn');
@@ -1208,11 +1217,14 @@
             errEl.classList.add('hidden');
             input.classList.remove('border-red-600');
           }
+          submitError.classList.add('hidden');
         });
       });
 
-      form.addEventListener('submit', function (e) {
+      form.addEventListener('submit', async function (e) {
         e.preventDefault();
+        submitError.classList.add('hidden');
+
         let valid = true;
         let firstInvalid = null;
 
@@ -1235,6 +1247,7 @@
           return;
         }
 
+        submitBtn.disabled = true;
         btnText.classList.add('hidden');
         btnSpinner.classList.remove('hidden');
 
@@ -1244,24 +1257,48 @@
           phone: document.getElementById('phone').value.trim(),
           profession: document.getElementById('profession').value.trim(),
           expectation: document.getElementById('expectation').value.trim(),
-          question: document.getElementById('question').value.trim(),
-          submittedAt: new Date().toISOString()
+          question: document.getElementById('question').value.trim()
         };
 
         try {
-          const saved = JSON.parse(sessionStorage.getItem('workshopRegistrations') || '[]');
-          saved.push(payload);
-          sessionStorage.setItem('workshopRegistrations', JSON.stringify(saved));
-        } catch (_) {}
+          if (GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL.startsWith('https://script.google.com/')) {
+            const response = await fetch(GOOGLE_SCRIPT_URL, {
+              method: 'POST',
+              redirect: 'follow',
+              headers: {
+                'Content-Type': 'text/plain;charset=utf-8'
+              },
+              body: JSON.stringify(payload)
+            });
 
-        setTimeout(() => {
-          btnText.classList.remove('hidden');
-          btnSpinner.classList.add('hidden');
+            if (!response.ok) {
+              throw new Error('HTTP ' + response.status);
+            }
+
+            const result = await response.json();
+            if (result.status !== 'success') {
+              throw new Error(result.message || 'Không thể lưu thông tin đăng ký.');
+            }
+          } else {
+            console.warn('[Google Sheets Sync] Chưa gắn GOOGLE_SCRIPT_URL trong index.html.');
+            const saved = JSON.parse(sessionStorage.getItem('workshopRegistrations') || '[]');
+            saved.push({ ...payload, submittedAt: new Date().toISOString() });
+            sessionStorage.setItem('workshopRegistrations', JSON.stringify(saved));
+          }
+
           modalGreeting.textContent = 'Cảm ơn ' + payload.fullName + ' đã đăng ký tham dự workshop.';
           modal.classList.remove('hidden');
           modal.classList.add('flex');
           form.reset();
-        }, 350);
+        } catch (err) {
+          submitError.textContent = 'Không thể gửi đăng ký lúc này. Vui lòng kiểm tra kết nối và thử lại.';
+          submitError.classList.remove('hidden');
+          console.error('[Google Sheets Sync Error]', err);
+        } finally {
+          submitBtn.disabled = false;
+          btnText.classList.remove('hidden');
+          btnSpinner.classList.add('hidden');
+        }
       });
 
       function closeModal() {
