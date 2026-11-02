@@ -1214,27 +1214,10 @@
       </h3>
       <p class="text-sm text-ink-body leading-relaxed mb-5" id="modalGreeting"></p>
 
-      <div class="bg-ivory p-4 border-l-2 border-gold text-xs space-y-1.5 text-ink-body mb-6">
+      <div class="bg-ivory p-4 border-l-2 border-gold text-xs space-y-1.5 text-ink-body">
         <div class="font-semibold text-ink">GIEO VIẾT “NGÁCH” – GẶT VIỆC “PHỤ”</div>
         <div>Thời gian: 18:30–21:00 | Thứ Năm, 12.11.2026</div>
         <div>Hình thức: Trực tuyến</div>
-      </div>
-
-      <div class="flex flex-col sm:flex-row gap-3">
-        <button
-          type="button"
-          id="downloadIcsBtn"
-          class="btn-gold-solid flex-1 py-3 px-4 text-xs uppercase text-center cursor-pointer"
-        >
-          Lưu lịch (.ics)
-        </button>
-        <button
-          type="button"
-          id="doneModalBtn"
-          class="border border-ink/20 text-ink hover:bg-ivory py-3 px-5 text-xs uppercase font-medium cursor-pointer transition-colors"
-        >
-          Đóng
-        </button>
       </div>
     </div>
   </div>
@@ -1273,8 +1256,6 @@
       const submitError = document.getElementById('submitError');
       const modal = document.getElementById('successModal');
       const closeModalBtn = document.getElementById('closeModalBtn');
-      const doneModalBtn = document.getElementById('doneModalBtn');
-      const downloadIcsBtn = document.getElementById('downloadIcsBtn');
       const modalGreeting = document.getElementById('modalGreeting');
       const btnText = document.getElementById('btnText');
       const btnSpinner = document.getElementById('btnSpinner');
@@ -1385,34 +1366,8 @@
       }
 
       closeModalBtn.addEventListener('click', closeModal);
-      doneModalBtn.addEventListener('click', closeModal);
       modal.addEventListener('click', (e) => {
         if (e.target === modal) closeModal();
-      });
-
-      downloadIcsBtn.addEventListener('click', function () {
-        const ics = [
-          'BEGIN:VCALENDAR',
-          'VERSION:2.0',
-          'PRODID:-//Gieo Viet Ngach//Workshop//VI',
-          'BEGIN:VEVENT',
-          'DTSTART:20261112T113000Z',
-          'DTEND:20261112T140000Z',
-          'SUMMARY:GIEO VIẾT "NGÁCH" - GẶT VIỆC "PHỤ"',
-          'DESCRIPTION:GIEO VIẾT "NGÁCH" - GẶT VIỆC "PHỤ" | 18:30–21:00 | Thứ Năm, 12.11.2026',
-          'LOCATION:Online qua Zoom',
-          'END:VEVENT',
-          'END:VCALENDAR'
-        ].join('\r\n');
-        const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'gieo-viet-ngach-gat-viec-phu.ics';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
       });
     });
   </script>
