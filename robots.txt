@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gieo-viet-ngach-gat-viec-phu.vercel.app/sitemap.xml

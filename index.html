@@ -3,14 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GIEO VIẾT "NGÁCH" - GẶT VIỆC "PHỤ"</title>
+  <title>GIEO VIẾT "NGÁCH" – GẶT VIỆC "PHỤ" | Workshop Đóng Gói Chuyên Môn & Tạo Thu Nhập Bền Vững</title>
 
-  <!-- SEO & Open Graph Metadata -->
-  <meta name="description" content="GIEO VIẾT 'NGÁCH' - GẶT VIỆC 'PHỤ'. Từ chuyên môn sẵn có đến những cơ hội. 18:30–21:00 | Thứ Năm, 12.11.2026. Trực tuyến.">
-  <meta property="og:title" content="GIEO VIẾT 'NGÁCH' - GẶT VIỆC 'PHỤ'">
-  <meta property="og:description" content="Những gì bạn tích lũy sau nhiều năm đi làm đều mang một giá trị thật, nếu biết cách sẻ chia qua con chữ.">
-  <meta property="og:image" content="mai-am-thien-than.png">
+  <!-- SEO & Canonical Metadata -->
+  <meta name="description" content="Workshop trực tuyến cùng Anh Trần Hùng Thiện & Anh Chu Quang Minh: Khám phá cách chuyển hóa kinh nghiệm chuyên môn thành nội dung giá trị, xây thương hiệu cá nhân và tạo nguồn thu bền vững ngoài giờ hành chính.">
+  <link rel="canonical" href="https://gieo-viet-ngach-gat-viec-phu.vercel.app/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Open Graph & Social Preview -->
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gieo-viet-ngach-gat-viec-phu.vercel.app/">
+  <meta property="og:title" content="GIEO VIẾT 'NGÁCH' – GẶT VIỆC 'PHỤ' | Workshop Trực Tuyến">
+  <meta property="og:description" content="Chuyển hóa kinh nghiệm chuyên môn thành nội dung giá trị, xây thương hiệu cá nhân và tạo thu nhập phụ bền vững cùng Anh Trần Hùng Thiện & Anh Chu Quang Minh.">
+  <meta property="og:image" content="https://gieo-viet-ngach-gat-viec-phu.vercel.app/mai-am-thien-than.png">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:site_name" content="Solobiz Academy">
+
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GIEO VIẾT 'NGÁCH' – GẶT VIỆC 'PHỤ'">
+  <meta name="twitter:description" content="Chuyển hóa chuyên môn sẵn có thành cơ hội nghề nghiệp và nguồn thu phụ ngoài giờ hành chính.">
+  <meta name="twitter:image" content="https://gieo-viet-ngach-gat-viec-phu.vercel.app/mai-am-thien-than.png">
+
+  <!-- JSON-LD Event Schema (Google EducationEvent Structured Data) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationEvent",
+    "name": "GIEO VIẾT \"NGÁCH\" – GẶT VIỆC \"PHỤ\"",
+    "description": "Workshop trực tuyến cùng Anh Trần Hùng Thiện & Anh Chu Quang Minh: Khám phá cách chuyển hóa kinh nghiệm chuyên môn thành nội dung giá trị, xây thương hiệu cá nhân và tạo thu nhập phụ bền vững ngoài giờ hành chính.",
+    "startDate": "2026-11-12T18:30:00+07:00",
+    "endDate": "2026-11-12T21:00:00+07:00",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://gieo-viet-ngach-gat-viec-phu.vercel.app/"
+    },
+    "image": [
+      "https://gieo-viet-ngach-gat-viec-phu.vercel.app/mai-am-thien-than.png"
+    ],
+    "organizer": {
+      "@type": "Organization",
+      "name": "Solobiz Academy",
+      "url": "https://gieo-viet-ngach-gat-viec-phu.vercel.app/"
+    },
+    "performer": [
+      {
+        "@type": "Person",
+        "name": "Trần Hùng Thiện",
+        "jobTitle": "Founder & CEO at GCOMM Global"
+      },
+      {
+        "@type": "Person",
+        "name": "Chu Quang Minh",
+        "jobTitle": "Founder & CEO at Solobiz Academy"
+      }
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "VND",
+      "availability": "https://schema.org/InStock",
+      "url": "https://gieo-viet-ngach-gat-viec-phu.vercel.app/"
+    }
+  }
+  </script>
 
   <!-- Typography System: Strictly 2 Harmonious Fonts -->
   <!-- 1. Playfair Display: Authoritative Editorial Serif (Full Vietnamese Diacritics) -->
@@ -40,12 +98,12 @@
             ink: {
               DEFAULT: '#1C2320',
               body: '#3B4540',
-              muted: '#6C7671'
+              muted: '#505A55' // Enhanced contrast for WCAG AA compliance (6.8:1)
             },
             gold: {
               DEFAULT: '#C9963B',
               bright: '#D8A648',
-              deep: '#AC7D2B',
+              deep: '#8A601A', // Darkened for text on light backgrounds (WCAG AA 5.1:1)
               pale: 'rgba(201, 150, 59, 0.14)'
             }
           },
@@ -124,6 +182,10 @@
       transform: translateY(-2px);
       box-shadow: 0 12px 28px rgba(201, 150, 59, 0.28);
     }
+    .btn-gold-solid:focus-visible {
+      outline: 2px solid #122922;
+      outline-offset: 3px;
+    }
 
     .btn-ghost-editorial {
       background-color: rgba(25, 56, 46, 0.45);
@@ -139,6 +201,17 @@
       color: #D8A648;
       transform: translateY(-2px);
     }
+    .btn-ghost-editorial:focus-visible {
+      outline: 2px solid #D8A648;
+      outline-offset: 3px;
+    }
+
+    /* Accessible Global Focus Ring */
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid #C9963B;
+      outline-offset: 3px;
+    }
 
     /* Strict Image Lock: Zero Crop, Zero Filter, Original Proportions */
     .img-locked-original {
@@ -147,17 +220,23 @@
       transform: none !important;
     }
 
-    /* Form Controls */
+    /* Form Controls & Accessible States */
     .input-studio {
       background-color: #FAF8F4;
-      border: 1px solid rgba(28, 35, 32, 0.18);
+      border: 1px solid rgba(28, 35, 32, 0.22);
       transition: all 0.2s ease;
     }
+    .input-studio:focus-visible,
     .input-studio:focus {
       outline: none;
       background-color: #FFFFFF;
       border-color: #122922;
-      box-shadow: 0 0 0 3px rgba(18, 41, 34, 0.1);
+      box-shadow: 0 0 0 3px rgba(18, 41, 34, 0.14);
+    }
+    .input-studio.is-invalid {
+      border-color: #DC2626 !important;
+      background-color: #FFF8F8 !important;
+      box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12) !important;
     }
 
     /* Progressive-Enhancement Scroll Reveal Motion */
@@ -185,6 +264,11 @@
 </head>
 <body class="bg-ivory text-ink selection:bg-gold selection:text-forest-deep min-h-screen flex flex-col overflow-x-hidden">
 
+  <!-- Accessible Skip to Main Content Link -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2.5 focus:bg-gold focus:text-forest-deep focus:font-semibold focus:shadow-2xl focus:border focus:border-forest-deep">
+    Nhảy đến nội dung chính
+  </a>
+
   <!-- ======================================================================= -->
   <!-- SECTION 01: CINEMATIC HERO & OVERLAPPING WORKSHOP LEDGER                -->
   <!-- ======================================================================= -->
@@ -193,12 +277,12 @@
     <!-- Subtle Top Gold Hairline Accent -->
     <div class="h-1 w-full bg-gradient-to-r from-forest-deep via-gold to-forest-deep"></div>
 
-    <!-- Minimalist Studio Navigation (No repeated headline, no removed labels) -->
+    <!-- Minimalist Studio Navigation -->
     <nav class="max-w-studio mx-auto px-6 lg:px-10 pt-6 pb-5 flex items-center justify-between border-b border-white/10" aria-label="Điều hướng chính">
       <a href="#" class="flex items-center gap-3 group" aria-label="Trang đầu">
         <span class="w-9 h-9 border border-gold/60 bg-forest/70 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-forest-deep transition-colors">
           <!-- Fountain Pen Nib Minimal Emblem -->
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l7-7 3 3-7 7-3-3z"/>
             <path stroke-linecap="round" stroke-linejoin="round" d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
             <path stroke-linecap="round" stroke-linejoin="round" d="M2 2l7.586 7.586"/>
@@ -216,7 +300,7 @@
         <a href="#cong-dong" class="hover:text-gold-bright transition-colors py-1">Cộng Đồng</a>
       </div>
 
-      <a href="#dang-ky" class="btn-gold-solid px-5 py-2.5 text-[11px] uppercase">
+      <a href="#dang-ky" class="btn-gold-solid px-5 py-2.5 text-[11px] uppercase min-h-[44px] inline-flex items-center justify-center">
         Đăng Ký
       </a>
     </nav>
@@ -237,27 +321,27 @@
           </div>
 
           <!-- Main Headline: Balanced Scale & Airy Line Spacing -->
-          <h1 id="hero-title" class="font-serif text-3xl sm:text-5xl lg:text-[54px] leading-[1.24] tracking-tight mb-9">
+          <h1 id="hero-title" class="font-serif text-2xl min-[360px]:text-[28px] min-[390px]:text-3xl sm:text-4xl lg:text-[46px] leading-[1.24] tracking-tight mb-7 sm:mb-9">
             <span class="block font-semibold text-white drop-shadow-sm">GIEO VIẾT "NGÁCH"</span>
-            <span class="block italic font-medium text-gold-bright mt-3.5 sm:mt-5">GẶT VIỆC "PHỤ"</span>
+            <span class="block italic font-medium text-gold-bright mt-2.5 sm:mt-4">GẶT VIỆC "PHỤ"</span>
           </h1>
 
           <!-- Lead Copy Framed by Artisanal Gold Vertical Bar -->
-          <div class="border-l-2 border-gold pl-5 sm:pl-7 space-y-4 max-w-2xl mb-10">
-            <p class="font-serif text-lg sm:text-[21px] text-ivory leading-relaxed font-normal">
+          <div class="border-l-2 border-gold pl-4 sm:pl-6 space-y-3 sm:space-y-4 max-w-2xl mb-8 sm:mb-10">
+            <p class="font-serif text-base sm:text-lg lg:text-[20px] text-ivory leading-relaxed font-normal">
               Những gì bạn tích lũy sau nhiều năm đi làm đều mang một giá trị thật, nếu biết cách sẻ chia qua con chữ.
             </p>
-            <p class="text-sm sm:text-base text-ivory/80 leading-[1.8] font-light">
-              Một buổi tối cùng ngồi lại, lắng nghe và khám phá cách đưa chuyên môn thành những chất liệu cơ hội giúp bạn vững vàng hơn trong sự nghiệp.
+            <p class="text-xs sm:text-sm lg:text-[15px] text-ivory/80 leading-[1.75] font-light">
+              Khám phá cách chuyển hóa kinh nghiệm chuyên môn thành nội dung giá trị, xây thương hiệu cá nhân và tạo nguồn thu bền vững ngoài giờ hành chính cùng Anh Trần Hùng Thiện & Anh Chu Quang Minh.
             </p>
           </div>
 
           <!-- Dual Action Buttons -->
           <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-            <a href="#dang-ky" class="btn-gold-solid text-center px-8 py-4 text-xs uppercase">
+            <a href="#dang-ky" class="btn-gold-solid text-center px-8 py-4 text-xs uppercase min-h-[48px] flex items-center justify-center">
               ĐĂNG KÝ THAM DỰ
             </a>
-            <a href="#workshop-insight" class="btn-ghost-editorial text-center px-8 py-4 text-xs uppercase">
+            <a href="#workshop-insight" class="btn-ghost-editorial text-center px-8 py-4 text-xs uppercase min-h-[48px] flex items-center justify-center">
               TÌM HIỂU WORKSHOP
             </a>
           </div>
@@ -270,6 +354,11 @@
       </div>
     </div>
   </header>
+
+  <!-- ======================================================================= -->
+  <!-- MAIN LANDING CONTENT (Semantic Landmark)                                -->
+  <!-- ======================================================================= -->
+  <main id="main-content" class="flex-1">
 
   <!-- OVERLAPPING ARCHITECTURAL WORKSHOP LEDGER (Inspired by The Hope Project) -->
   <div class="max-w-studio mx-auto px-6 lg:px-10 -mt-20 sm:-mt-24 relative z-20 w-full">
@@ -286,65 +375,65 @@
         <span class="h-px w-12 bg-gold/40 hidden sm:block"></span>
       </div>
 
-      <!-- 4-Column Architectural Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-ink/10">
+      <!-- 4-Column Architectural Grid: Compact 2x2 on Mobile, 4-Col on Desktop -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 divide-y divide-ink/10 lg:divide-y-0 lg:divide-x">
 
-        <!-- Item 1: Thời gian -->
-        <div class="p-6 sm:p-8 flex flex-col justify-between hover:bg-ivory/50 transition-colors">
-          <div class="w-10 h-10 rounded-full bg-gold/15 text-forest flex items-center justify-center mb-4">
-            <svg class="w-5 h-5 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+        <!-- Item 1: Thời gian (Spans 2 cols on mobile, 1 col on desktop) -->
+        <div class="col-span-2 sm:col-span-1 lg:col-span-1 p-4 sm:p-6 lg:p-8 flex items-start sm:flex-col sm:justify-between gap-3.5 sm:gap-4 hover:bg-ivory/50 transition-colors">
+          <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gold/15 text-forest flex items-center justify-center flex-shrink-0 sm:mb-4">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
               <circle cx="12" cy="12" r="9"/>
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v5l3 2"/>
             </svg>
           </div>
           <div>
-            <div class="text-[11px] uppercase tracking-[0.16em] text-ink-muted font-medium mb-1">Thời gian</div>
-            <div class="text-sm sm:text-[15px] font-semibold text-ink leading-snug">
+            <div class="text-[10px] sm:text-[11px] uppercase tracking-[0.16em] text-ink-muted font-medium mb-0.5 sm:mb-1">Thời gian</div>
+            <div class="text-xs sm:text-[15px] font-semibold text-ink leading-snug">
               18:30–21:00 | Thứ Năm, 12.11.2026
             </div>
           </div>
         </div>
 
         <!-- Item 2: Hình thức -->
-        <div class="p-6 sm:p-8 flex flex-col justify-between hover:bg-ivory/50 transition-colors">
-          <div class="w-10 h-10 rounded-full bg-gold/15 text-forest flex items-center justify-center mb-4">
-            <svg class="w-5 h-5 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+        <div class="col-span-1 border-r border-ink/10 lg:border-r-0 p-4 sm:p-6 lg:p-8 flex items-start sm:flex-col sm:justify-between gap-3 sm:gap-4 hover:bg-ivory/50 transition-colors">
+          <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gold/15 text-forest flex items-center justify-center flex-shrink-0 sm:mb-4">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
               <rect x="3" y="5" width="13" height="14" rx="1.5"/>
               <path stroke-linecap="round" stroke-linejoin="round" d="M16 10l5-3v10l-5-3"/>
             </svg>
           </div>
           <div>
-            <div class="text-[11px] uppercase tracking-[0.16em] text-ink-muted font-medium mb-1">Hình thức</div>
-            <div class="text-sm sm:text-[15px] font-semibold text-ink leading-snug">
+            <div class="text-[10px] sm:text-[11px] uppercase tracking-[0.16em] text-ink-muted font-medium mb-0.5 sm:mb-1">Hình thức</div>
+            <div class="text-xs sm:text-[15px] font-semibold text-ink leading-snug">
               Trực tuyến
             </div>
           </div>
         </div>
 
         <!-- Item 3: Phí tham dự -->
-        <div class="p-6 sm:p-8 flex flex-col justify-between hover:bg-ivory/50 transition-colors">
-          <div class="w-10 h-10 rounded-full bg-gold/15 text-forest flex items-center justify-center mb-4">
-            <svg class="w-5 h-5 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+        <div class="col-span-1 p-4 sm:p-6 lg:p-8 flex items-start sm:flex-col sm:justify-between gap-3 sm:gap-4 hover:bg-ivory/50 transition-colors">
+          <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gold/15 text-forest flex items-center justify-center flex-shrink-0 sm:mb-4">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/>
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 7a2 2 0 012-2h12a2 2 0 012 2v3a2 2 0 000 4v3a2 2 0 01-2 2H6a2 2 0 01-2-2v-3a2 2 0 000-4V7z"/>
             </svg>
           </div>
           <div>
-            <div class="text-[11px] uppercase tracking-[0.16em] text-ink-muted font-medium mb-1">Phí tham dự</div>
-            <div class="text-base sm:text-lg font-bold text-forest leading-snug">
+            <div class="text-[10px] sm:text-[11px] uppercase tracking-[0.16em] text-ink-muted font-medium mb-0.5 sm:mb-1">Phí tham dự</div>
+            <div class="text-sm sm:text-lg font-bold text-forest leading-snug">
               Miễn phí
             </div>
           </div>
         </div>
 
-        <!-- Item 4: Hoạt động gây quỹ tự nguyện -->
-        <div class="p-6 sm:p-8 flex flex-col justify-between bg-ivory/60">
-          <div class="w-10 h-10 rounded-full bg-gold/20 text-forest flex items-center justify-center mb-4">
-            <svg class="w-5 h-5 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+        <!-- Item 4: Hoạt động gây quỹ tự nguyện (Spans 2 cols on mobile) -->
+        <div class="col-span-2 sm:col-span-1 lg:col-span-1 p-3.5 sm:p-6 lg:p-8 flex items-center sm:flex-col sm:justify-between sm:items-start gap-3 sm:gap-4 bg-ivory/70">
+          <div class="w-7 h-7 sm:w-10 sm:h-10 rounded-full bg-gold/20 text-forest flex items-center justify-center flex-shrink-0 sm:mb-4">
+            <svg class="w-3.5 h-3.5 sm:w-5 sm:h-5 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-6.5-4.35-9-8.5C1.2 9.5 3.2 5.5 7 5.5c2.1 0 3.6 1.1 5 2.8 1.4-1.7 2.9-2.8 5-2.8 3.8 0 5.8 4 4 7-2.5 4.15-9 8.5-9 8.5z"/>
             </svg>
           </div>
-          <p class="text-xs sm:text-[13.5px] text-ink-body leading-relaxed font-normal">
+          <p class="text-[11.5px] sm:text-[13.5px] text-ink-body leading-relaxed font-normal">
             Hoạt động gây quỹ tự nguyện được tổ chức vào cuối chương trình.
           </p>
         </div>
@@ -356,7 +445,7 @@
   <!-- ======================================================================= -->
   <!-- SECTION 02: WORKSHOP INSIGHT (MNTN Asymmetric Editorial + Collage)      -->
   <!-- ======================================================================= -->
-  <section id="workshop-insight" class="bg-ivory editorial-grid-bg py-20 sm:py-28 lg:py-32 relative overflow-hidden" aria-labelledby="insight-heading">
+  <section id="workshop-insight" class="bg-ivory editorial-grid-bg py-14 sm:py-20 lg:py-28 relative overflow-hidden" aria-labelledby="insight-heading">
     <div class="max-w-studio mx-auto px-6 lg:px-10">
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -375,34 +464,54 @@
               <span class="w-1.5 h-1.5 rounded-full bg-gold"></span>
             </div>
 
-            <h2 id="insight-heading" class="font-serif text-3xl sm:text-5xl font-semibold text-forest leading-[1.16] mb-4">
+            <h2 id="insight-heading" class="font-serif text-2xl min-[360px]:text-[26px] sm:text-3xl lg:text-4xl font-semibold text-forest leading-[1.2] mb-3 sm:mb-4">
               "You know more than you think."
             </h2>
 
-            <p class="font-serif italic text-xl sm:text-2xl text-gold-deep leading-relaxed mb-8">
+            <p class="font-serif italic text-base sm:text-lg lg:text-xl text-gold-deep leading-relaxed mb-6 sm:mb-8">
               Chuyên môn bạn coi là quen thuộc, ngoài kia đang có người cần tìm.
             </p>
 
-            <p class="text-[15.5px] sm:text-base text-ink-body leading-[1.85] font-normal mb-8">
+            <p class="text-xs sm:text-[14.5px] lg:text-[15px] text-ink-body leading-[1.8] font-normal mb-6 sm:mb-8">
               Một vấn đề từng giải quyết, một kinh nghiệm từng đúc kết, một kiến thức bạn hiểu rõ nhưng người khác vẫn đang loay hoay tìm kiếm... Chính những trải nghiệm thầm lặng ấy là chất liệu quý giá nhất của một người làm nghề.
             </p>
 
+            <!-- Mobile Editorial Interleaved Image 1 (Breaks wall of text on phone) -->
+            <div class="block lg:hidden my-6 bg-white p-2.5 shadow-[0_12px_28px_rgba(18,41,34,0.10)] border border-ink/10">
+              <img
+                src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1100&q=85"
+                alt="Sổ tay ghi chép và bút viết"
+                class="w-full h-52 sm:h-64 object-cover block"
+                loading="lazy"
+              >
+            </div>
+
             <!-- Elevated Deep Forest Editorial Feature Box -->
-            <div class="bg-forest text-ivory p-7 sm:p-9 border-l-4 border-gold shadow-xl relative">
-              <h3 class="font-serif italic text-2xl text-gold-bright mb-3.5">
+            <div class="bg-forest text-ivory p-5 sm:p-7 border-l-4 border-gold shadow-xl relative">
+              <h3 class="font-serif italic text-lg sm:text-xl text-gold-bright mb-2.5">
                 Khi con chữ kể chuyện...
               </h3>
-              <div class="text-sm sm:text-[15px] text-ivory/90 leading-[1.82] font-light space-y-2.5">
+              <div class="text-xs sm:text-[14px] text-ivory/90 leading-[1.75] font-light space-y-2">
                 <p>Nội dung bắt đầu chỉ đơn giản: Bạn đang biết một điều mà người khác cần biết.</p>
                 <p>Khi được xây dựng và phát triển đúng hướng, content có thể giúp bạn mở ra những cơ hội mới và mang lại một nguồn thu phụ xứng đáng ngoài giờ hành chính.</p>
               </div>
+            </div>
+
+            <!-- Mobile Editorial Interleaved Image 2 (Secondary detail on phone) -->
+            <div class="block lg:hidden mt-5 bg-white p-2 shadow-sm border border-ink/10">
+              <img
+                src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=700&q=80"
+                alt="Chi tiết trang viết chuyên môn"
+                class="w-full h-36 sm:h-44 object-cover block"
+                loading="lazy"
+              >
             </div>
           </div>
 
         </div>
 
-        <!-- Right 6 Columns: Layered Editorial Craft Collage -->
-        <div class="lg:col-span-6 relative reveal-up">
+        <!-- Right 6 Columns: Layered Editorial Craft Collage (Desktop Only) -->
+        <div class="hidden lg:block lg:col-span-6 relative reveal-up">
           <div class="relative pl-4 sm:pl-10 pb-8 sm:pb-12">
 
             <!-- Offset Gold Architectural Wireframe -->
@@ -439,71 +548,131 @@
   <!-- ======================================================================= -->
   <!-- SECTION: ĐỐI TƯỢNG PHÙ HỢP (Những ai sẽ tìm thấy mình...)               -->
   <!-- ======================================================================= -->
-  <section id="doi-tuong" class="bg-ivory border-t border-ink/10 py-16 sm:py-20 lg:py-24 relative overflow-hidden" aria-labelledby="audience-heading">
-    <div class="max-w-studio mx-auto px-6 lg:px-10">
+  <section id="doi-tuong" class="bg-ivory border-t border-ink/10 py-8 sm:py-12 lg:py-14 relative overflow-hidden" aria-labelledby="audience-heading">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
 
-      <div class="max-w-4xl mx-auto text-center mb-12 sm:mb-14 reveal-up">
-        <div class="flex items-center justify-center gap-3 mb-3">
-          <span class="h-px w-8 bg-gold"></span>
+      <div class="max-w-2xl mx-auto text-center mb-5 sm:mb-8 reveal-up">
+        <div class="flex items-center justify-center gap-3 mb-2 sm:mb-2.5">
+          <span class="h-px w-7 bg-gold"></span>
           <span class="w-1.5 h-1.5 rounded-full bg-gold"></span>
-          <span class="h-px w-8 bg-gold"></span>
+          <span class="h-px w-7 bg-gold"></span>
         </div>
-        <h2 id="audience-heading" class="font-serif text-[16.5px] min-[400px]:text-lg sm:text-2xl lg:text-[28px] xl:text-[32px] font-semibold text-forest leading-snug whitespace-nowrap">
+        <h2 id="audience-heading" class="font-serif text-[14.5px] min-[360px]:text-[15.5px] sm:text-lg lg:text-xl font-semibold text-forest leading-snug tracking-tight whitespace-nowrap">
           Những ai sẽ tìm thấy mình trong buổi chia sẻ này?
         </h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6">
+      <!-- MOBILE LAYOUT: Compact Editorial Horizontal Rows (block md:hidden) -->
+      <div class="block md:hidden space-y-2.5 reveal-up">
+
+        <!-- Mobile Card 1 -->
+        <div class="bg-white border border-ink/10 border-l-[3px] border-l-gold p-3 sm:p-3.5 shadow-xs flex items-start gap-3">
+          <div class="w-8 h-8 rounded-full bg-gold/15 text-forest flex items-center justify-center flex-shrink-0 mt-0.5">
+            <svg class="w-3.5 h-3.5 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+              <rect x="3" y="7" width="18" height="13" rx="1.5"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2M12 12v3M3 13h18"/>
+            </svg>
+          </div>
+          <div class="min-w-0 flex-1">
+            <h3 class="font-serif text-[13.5px] min-[360px]:text-[14px] sm:text-[15px] font-semibold text-ink leading-snug mb-0.5 tracking-tight whitespace-nowrap">
+              Nhân sự văn phòng (20 – 35 tuổi)
+            </h3>
+            <p class="text-[12px] sm:text-[12.5px] text-ink-body leading-relaxed font-normal">
+              Đã có vốn nghề và trải nghiệm thực tế, nhưng chưa biết cách chuyển hóa thành con chữ giá trị.
+            </p>
+          </div>
+        </div>
+
+        <!-- Mobile Card 2 -->
+        <div class="bg-white border border-ink/10 border-l-[3px] border-l-gold p-3 sm:p-3.5 shadow-xs flex items-start gap-3">
+          <div class="w-8 h-8 rounded-full bg-gold/15 text-forest flex items-center justify-center flex-shrink-0 mt-0.5">
+            <svg class="w-3.5 h-3.5 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+              <ellipse cx="12" cy="6" rx="8" ry="3"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3V6"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 12v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/>
+            </svg>
+          </div>
+          <div class="min-w-0 flex-1">
+            <h3 class="font-serif text-[13.5px] min-[360px]:text-[14px] sm:text-[15px] font-semibold text-ink leading-snug mb-0.5 tracking-tight whitespace-nowrap">
+              Người muốn thêm thu nhập ngoài giờ
+            </h3>
+            <p class="text-[12px] sm:text-[12.5px] text-ink-body leading-relaxed font-normal">
+              Tạo thêm nguồn thu thứ hai bền vững dựa trên năng lực và kỹ năng sẵn có.
+            </p>
+          </div>
+        </div>
+
+        <!-- Mobile Card 3 -->
+        <div class="bg-white border border-ink/10 border-l-[3px] border-l-gold p-3 sm:p-3.5 shadow-xs flex items-start gap-3">
+          <div class="w-8 h-8 rounded-full bg-gold/15 text-forest flex items-center justify-center flex-shrink-0 mt-0.5">
+            <svg class="w-3.5 h-3.5 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          <div class="min-w-0 flex-1">
+            <h3 class="font-serif text-[13.5px] min-[360px]:text-[14px] sm:text-[15px] font-semibold text-ink leading-snug mb-0.5 tracking-tight whitespace-nowrap">
+              Người muốn xây thương hiệu cá nhân
+            </h3>
+            <p class="text-[12px] sm:text-[12.5px] text-ink-body leading-relaxed font-normal">
+              Muốn đóng gói kiến thức để tiếp cận đúng người cần và mở ra những cơ hội nghề nghiệp mới.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- DESKTOP LAYOUT: 3 Compact Architectural Vertical Cards (hidden md:grid md:grid-cols-3) -->
+      <div class="hidden md:grid md:grid-cols-3 gap-4 lg:gap-5">
 
         <!-- Card 1 -->
-        <div class="bg-white border border-ink/10 border-t-2 border-t-gold p-6 sm:p-6 lg:p-5 xl:p-7 flex flex-col justify-between shadow-[0_12px_32px_rgba(18,41,34,0.05)] hover:-translate-y-1 transition-transform duration-300 reveal-up">
+        <div class="bg-white border border-ink/10 border-t-2 border-t-gold p-5 lg:p-5 xl:p-6 flex flex-col justify-between shadow-[0_8px_24px_rgba(18,41,34,0.04)] hover:-translate-y-0.5 transition-transform duration-300 reveal-up">
           <div>
-            <div class="w-10 h-10 rounded-full bg-gold/15 text-forest flex items-center justify-center mb-5">
-              <svg class="w-5 h-5 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <div class="w-8 h-8 rounded-full bg-gold/15 text-forest flex items-center justify-center mb-3.5">
+              <svg class="w-4 h-4 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                 <rect x="3" y="7" width="18" height="13" rx="1.5"/>
                 <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2M12 12v3M3 13h18"/>
               </svg>
             </div>
-            <h3 class="font-serif text-[15px] sm:text-[15.5px] lg:text-[15.5px] xl:text-[17px] font-semibold text-ink leading-snug mb-3 whitespace-nowrap tracking-tight">
+            <h3 class="font-serif text-[14px] lg:text-[14.5px] xl:text-[15.5px] font-semibold text-ink leading-snug mb-2 whitespace-nowrap tracking-tight">
               Nhân sự văn phòng (20 – 35 tuổi)
             </h3>
-            <p class="text-sm text-ink-body leading-[1.75] font-normal">
+            <p class="text-xs lg:text-[13px] text-ink-body leading-relaxed font-normal">
               Đã có vốn nghề và trải nghiệm thực tế, nhưng chưa biết cách chuyển hóa thành con chữ giá trị.
             </p>
           </div>
         </div>
 
         <!-- Card 2 -->
-        <div class="bg-white border border-ink/10 border-t-2 border-t-gold p-6 sm:p-6 lg:p-5 xl:p-7 flex flex-col justify-between shadow-[0_12px_32px_rgba(18,41,34,0.05)] hover:-translate-y-1 transition-transform duration-300 reveal-up">
+        <div class="bg-white border border-ink/10 border-t-2 border-t-gold p-5 lg:p-5 xl:p-6 flex flex-col justify-between shadow-[0_8px_24px_rgba(18,41,34,0.04)] hover:-translate-y-0.5 transition-transform duration-300 reveal-up">
           <div>
-            <div class="w-10 h-10 rounded-full bg-gold/15 text-forest flex items-center justify-center mb-5">
-              <svg class="w-5 h-5 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <div class="w-8 h-8 rounded-full bg-gold/15 text-forest flex items-center justify-center mb-3.5">
+              <svg class="w-4 h-4 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                 <ellipse cx="12" cy="6" rx="8" ry="3"/>
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3V6"/>
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 12v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/>
               </svg>
             </div>
-            <h3 class="font-serif text-[15px] sm:text-[15.5px] lg:text-[15.5px] xl:text-[17px] font-semibold text-ink leading-snug mb-3 whitespace-nowrap tracking-tight">
+            <h3 class="font-serif text-[14px] lg:text-[14.5px] xl:text-[15.5px] font-semibold text-ink leading-snug mb-2 whitespace-nowrap tracking-tight">
               Người muốn thêm thu nhập ngoài giờ
             </h3>
-            <p class="text-sm text-ink-body leading-[1.75] font-normal">
+            <p class="text-xs lg:text-[13px] text-ink-body leading-relaxed font-normal">
               Tạo thêm nguồn thu thứ hai bền vững dựa trên năng lực và kỹ năng sẵn có.
             </p>
           </div>
         </div>
 
         <!-- Card 3 -->
-        <div class="bg-white border border-ink/10 border-t-2 border-t-gold p-6 sm:p-6 lg:p-5 xl:p-7 flex flex-col justify-between shadow-[0_12px_32px_rgba(18,41,34,0.05)] hover:-translate-y-1 transition-transform duration-300 reveal-up">
+        <div class="bg-white border border-ink/10 border-t-2 border-t-gold p-5 lg:p-5 xl:p-6 flex flex-col justify-between shadow-[0_8px_24px_rgba(18,41,34,0.04)] hover:-translate-y-0.5 transition-transform duration-300 reveal-up">
           <div>
-            <div class="w-10 h-10 rounded-full bg-gold/15 text-forest flex items-center justify-center mb-5">
-              <svg class="w-5 h-5 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <div class="w-8 h-8 rounded-full bg-gold/15 text-forest flex items-center justify-center mb-3.5">
+              <svg class="w-4 h-4 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
               </svg>
             </div>
-            <h3 class="font-serif text-[15px] sm:text-[15.5px] lg:text-[15.5px] xl:text-[17px] font-semibold text-ink leading-snug mb-3 whitespace-nowrap tracking-tight">
+            <h3 class="font-serif text-[14px] lg:text-[14.5px] xl:text-[15.5px] font-semibold text-ink leading-snug mb-2 whitespace-nowrap tracking-tight">
               Người muốn xây thương hiệu cá nhân
             </h3>
-            <p class="text-sm text-ink-body leading-[1.75] font-normal">
+            <p class="text-xs lg:text-[13px] text-ink-body leading-relaxed font-normal">
               Muốn đóng gói kiến thức để tiếp cận đúng người cần và mở ra những cơ hội nghề nghiệp mới.
             </p>
           </div>
@@ -517,7 +686,7 @@
   <!-- ======================================================================= -->
   <!-- SECTION 03A: SPEAKERS (Warm Stone Architectural Showcase)               -->
   <!-- ======================================================================= -->
-  <section id="speakers" class="bg-ivory-warm py-20 sm:py-28 border-t border-ink/10 relative overflow-hidden" aria-labelledby="speakers-heading">
+  <section id="speakers" class="bg-ivory-warm py-14 sm:py-20 lg:py-28 border-t border-ink/10 relative overflow-hidden" aria-labelledby="speakers-heading">
     <div class="max-w-studio mx-auto px-6 lg:px-10">
 
       <!-- Section Editorial Header with Giant Numeral 02 -->
@@ -526,108 +695,104 @@
           02
         </div>
         <div class="relative z-10">
-          <div class="flex items-center justify-center gap-3 mb-4">
+          <div class="flex items-center justify-center gap-3 mb-3">
             <span class="h-px w-8 bg-gold"></span>
             <span class="w-1.5 h-1.5 rounded-full bg-gold"></span>
             <span class="h-px w-8 bg-gold"></span>
           </div>
-          <h2 id="speakers-heading" class="font-serif text-2xl sm:text-4xl font-semibold text-forest tracking-wide mb-4">
+          <h2 id="speakers-heading" class="font-serif text-xl sm:text-2xl lg:text-3xl font-semibold text-forest tracking-wide mb-3">
             HAI NGƯỜI LÀM THẬT • HAI GÓC NHÌN
           </h2>
-          <p class="text-sm sm:text-base text-ink-body leading-[1.8] font-normal max-w-2xl mx-auto">
+          <p class="text-xs sm:text-sm lg:text-[15px] text-ink-body leading-relaxed font-normal max-w-2xl mx-auto">
             Một người giúp bạn nhìn ra giá trị từ góc độ thị trường và nhu cầu doanh nghiệp. Một người cùng bạn khám phá cách chuyển hóa chuyên môn thành nội dung và mô hình kinh doanh cá nhân.
           </p>
         </div>
       </div>
 
-      <!-- 2 Sculptural Speaker Dossier Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+      <!-- 2 Sculptural Speaker Dossier Cards: Open, Spacious & De-nested -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
 
         <!-- SPEAKER 01: ANH TRẦN HÙNG THIỆN -->
-        <article class="bg-white border border-ink/10 shadow-[0_20px_50px_rgba(18,41,34,0.08)] flex flex-col justify-between relative overflow-hidden reveal-up">
-          <div class="h-1.5 w-full bg-forest"></div>
+        <article class="bg-white border border-ink/10 shadow-[0_16px_40px_rgba(18,41,34,0.06)] flex flex-col justify-between relative overflow-hidden reveal-up">
+          <div class="h-1 w-full bg-forest"></div>
 
-          <div class="p-6 sm:p-8 flex-1 flex flex-col">
-            <!-- Portrait Stage: 3/4 scale (max-w-[265px]), 1:1 Square, 100% Uncropped & Unfiltered -->
-            <div class="relative py-4 mb-7 bg-ivory/70 border border-ink/5">
-              <div class="w-3/4 max-w-[265px] aspect-square mx-auto bg-[#E4E4E4] border border-ink/10 shadow-md overflow-hidden flex items-center justify-center">
-                <img
-                  src="Speaker-Tran-Hung-Thien.jpeg"
-                  alt="DIỄN GIẢ: ANH TRẦN HÙNG THIỆN"
-                  class="w-full h-full img-locked-original"
-                  loading="lazy"
-                >
-              </div>
+          <div class="p-5 sm:p-7 lg:p-8 flex-1 flex flex-col">
+            <!-- Portrait Stage: Clean, Uncropped & Unframed -->
+            <div class="w-40 sm:w-48 lg:w-52 aspect-square mx-auto bg-[#E4E4E4] border border-ink/10 shadow-sm overflow-hidden flex items-center justify-center mb-5">
+              <img
+                src="Speaker-Tran-Hung-Thien.jpeg"
+                alt="DIỄN GIẢ: ANH TRẦN HÙNG THIỆN"
+                class="w-full h-full img-locked-original"
+                loading="lazy"
+              >
             </div>
 
             <!-- Speaker Identity -->
-            <div class="mb-6">
-              <div class="text-[11px] uppercase tracking-[0.2em] text-gold-deep font-bold mb-2">
-                DIỄN GIẢ: ANH TRẦN HÙNG THIỆN
+            <div class="mb-4">
+              <div class="text-[10.5px] uppercase tracking-[0.16em] text-gold-deep font-bold mb-1">
+                Diễn giả 01
               </div>
-              <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-ink mb-1.5">
+              <h3 class="font-serif text-xl sm:text-2xl font-semibold text-ink mb-1">
                 Anh Trần Hùng Thiện
               </h3>
-              <div class="text-sm font-medium text-forest">
+              <div class="text-xs sm:text-[13px] font-medium text-forest">
                 Founder &amp; CEO at GCOMM Global
               </div>
             </div>
 
-            <!-- Session Focus Panel (Single-line Session Title, Exact 3-line Description) -->
-            <div class="mt-auto bg-ivory border-l-4 border-forest p-5">
-              <div class="font-serif text-[16px] sm:text-[17.5px] font-semibold text-forest leading-snug mb-1 sm:whitespace-nowrap">
-                Phiên chia sẻ: "Ai cũng có thứ để viết ra tiền"
+            <!-- Session Focus Section (Single-line on Mobile, No Quotes, De-nested) -->
+            <div class="mt-auto pt-4 sm:pt-5 border-t border-ink/10">
+              <div class="font-serif text-[12.5px] min-[375px]:text-[13.5px] sm:text-[15.5px] font-semibold text-forest leading-snug mb-1 whitespace-nowrap tracking-tight">
+                Phiên chia sẻ: Ai cũng có thứ để viết ra tiền
               </div>
-              <div class="text-xs uppercase tracking-[0.14em] text-gold-deep font-semibold mb-3.5">
+              <div class="text-[11px] min-[375px]:text-xs uppercase tracking-wider sm:tracking-[0.14em] text-gold-deep font-semibold mb-2.5 whitespace-nowrap">
                 Nghiên cứu thị trường &amp; dữ liệu
               </div>
-              <p class="text-[13.5px] text-ink-body leading-[1.78] font-normal">
-                Với góc nhìn từ nghiên cứu thị trường, dữ liệu và nhu cầu <br class="hidden lg:inline">doanh nghiệp, Anh Trần Hùng Thiện sẽ cùng bạn nhìn lại những <br class="hidden lg:inline">hiểu lầm thường gặp về việc viết và bóc tách chuyên môn.
+              <p class="text-xs sm:text-[13.5px] text-ink-body leading-relaxed font-normal">
+                Với góc nhìn từ nghiên cứu thị trường, dữ liệu và nhu cầu doanh nghiệp, Anh Trần Hùng Thiện sẽ cùng bạn nhìn lại những hiểu lầm thường gặp về việc viết và bóc tách chuyên môn.
               </p>
             </div>
           </div>
         </article>
 
         <!-- SPEAKER 02: CHU QUANG MINH -->
-        <article class="bg-white border border-ink/10 shadow-[0_20px_50px_rgba(18,41,34,0.08)] flex flex-col justify-between relative overflow-hidden reveal-up">
-          <div class="h-1.5 w-full bg-gold"></div>
+        <article class="bg-white border border-ink/10 shadow-[0_16px_40px_rgba(18,41,34,0.06)] flex flex-col justify-between relative overflow-hidden reveal-up">
+          <div class="h-1 w-full bg-gold"></div>
 
-          <div class="p-6 sm:p-8 flex-1 flex flex-col">
-            <!-- Portrait Stage: 3/4 scale (max-w-[265px]), 1:1 Square, 100% Uncropped & Unfiltered -->
-            <div class="relative py-4 mb-7 bg-ivory/70 border border-ink/5">
-              <div class="w-3/4 max-w-[265px] aspect-square mx-auto bg-[#1F2022] border border-ink/10 shadow-md overflow-hidden flex items-center justify-center">
-                <img
-                  src="Speaker-Chu-Quang-Minh.jpeg"
-                  alt="DIỄN GIẢ 02: CHU QUANG MINH"
-                  class="w-full h-full img-locked-original"
-                  loading="lazy"
-                >
-              </div>
+          <div class="p-5 sm:p-7 lg:p-8 flex-1 flex flex-col">
+            <!-- Portrait Stage: Clean, Uncropped & Unframed -->
+            <div class="w-40 sm:w-48 lg:w-52 aspect-square mx-auto bg-[#1F2022] border border-ink/10 shadow-sm overflow-hidden flex items-center justify-center mb-5">
+              <img
+                src="Speaker-Chu-Quang-Minh.jpeg"
+                alt="DIỄN GIẢ 02: CHU QUANG MINH"
+                class="w-full h-full img-locked-original"
+                loading="lazy"
+              >
             </div>
 
             <!-- Speaker Identity -->
-            <div class="mb-6">
-              <div class="text-[11px] uppercase tracking-[0.2em] text-gold-deep font-bold mb-2">
-                DIỄN GIẢ 02: CHU QUANG MINH
+            <div class="mb-4">
+              <div class="text-[10.5px] uppercase tracking-[0.16em] text-gold-deep font-bold mb-1">
+                Diễn giả 02
               </div>
-              <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-ink mb-1.5">
+              <h3 class="font-serif text-xl sm:text-2xl font-semibold text-ink mb-1">
                 Chu Quang Minh
               </h3>
-              <div class="text-sm font-medium text-forest">
+              <div class="text-xs sm:text-[13px] font-medium text-forest">
                 CEO &amp; Founder Solobiz Academy
               </div>
             </div>
 
-            <!-- Session Focus Panel (Single-line Session Title) -->
-            <div class="mt-auto bg-ivory border-l-4 border-gold p-5">
-              <div class="font-serif text-[16px] sm:text-[17.5px] font-semibold text-forest leading-snug mb-1 sm:whitespace-nowrap">
-                Phiên chia sẻ: "ZERO → CONTENT → MONEY"
+            <!-- Session Focus Section (Single-line on Mobile, No Quotes, De-nested) -->
+            <div class="mt-auto pt-4 sm:pt-5 border-t border-ink/10">
+              <div class="font-serif text-[12.5px] min-[375px]:text-[13.5px] sm:text-[15.5px] font-semibold text-forest leading-snug mb-1 whitespace-nowrap tracking-tight">
+                Phiên chia sẻ: ZERO → CONTENT → MONEY
               </div>
-              <div class="text-xs uppercase tracking-[0.14em] text-gold-deep font-semibold mb-3.5">
+              <div class="text-[11px] min-[375px]:text-xs uppercase tracking-wider sm:tracking-[0.14em] text-gold-deep font-semibold mb-2.5 whitespace-nowrap">
                 Personal Branding &amp; One-Person Business
               </div>
-              <p class="text-[13.5px] text-ink-body leading-[1.78] font-normal">
-                Tập trung vào Personal Branding, Content Marketing và <br class="hidden lg:inline">mô hình One-Person Business, Anh Chu Quang Minh sẽ chia sẻ <br class="hidden lg:inline">cách phát triển Content từ nền tảng chuyên môn sẵn có.
+              <p class="text-xs sm:text-[13.5px] text-ink-body leading-relaxed font-normal">
+                Tập trung vào Personal Branding, Content Marketing và mô hình One-Person Business, Anh Chu Quang Minh sẽ chia sẻ cách phát triển Content từ nền tảng chuyên môn sẵn có.
               </p>
             </div>
           </div>
@@ -641,7 +806,7 @@
   <!-- ======================================================================= -->
   <!-- SECTION 03B: THE 7-STEP JOURNEY (Full-Bleed Deep Forest Centerpiece)    -->
   <!-- ======================================================================= -->
-  <section id="hanh-trinh-7-buoc" class="journey-stage text-ivory py-16 sm:py-24 border-y border-gold/25 relative overflow-hidden" aria-labelledby="journey-heading">
+  <section id="hanh-trinh-7-buoc" class="journey-stage text-ivory py-12 sm:py-16 lg:py-20 border-y border-gold/25 relative overflow-hidden" aria-labelledby="journey-heading">
     <div class="max-w-studio mx-auto px-6 lg:px-10 relative z-10 reveal-up">
 
       <div class="text-center max-w-2xl mx-auto mb-10">
@@ -654,35 +819,152 @@
         </div>
       </div>
 
-      <!-- Single Horizontal Row on Desktop with Meaningful Line Icons -->
-      <div class="bg-forest-deep/75 backdrop-blur-sm border border-gold/30 p-5 sm:p-7 shadow-2xl">
-        <div class="flex flex-col lg:flex-row items-center justify-between gap-2.5 lg:gap-1.5 font-sans">
+      <!-- Single Horizontal Row on Desktop, Sequential Stepped Roadmap on Mobile -->
+      <div class="bg-forest-deep/80 backdrop-blur-sm border border-gold/30 p-4 sm:p-6 lg:p-7 shadow-2xl">
 
-          <!-- Step 1: EXPERTISE (Briefcase / Craft Mastery) -->
-          <div class="w-full lg:w-auto px-3.5 py-3 bg-forest-mid/80 border border-white/10 text-center">
-            <svg class="w-4 h-4 mx-auto mb-1.5 text-gold-bright" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <!-- MOBILE & TABLET LAYOUT: Authentic Sequential Vertical Journey (block lg:hidden) -->
+        <div class="block lg:hidden max-w-sm mx-auto">
+          <div class="relative pl-7 space-y-2">
+            <!-- Continuous Gold Connecting Rail -->
+            <div class="absolute left-3 top-3 bottom-3 w-[1.5px] bg-gradient-to-b from-gold/40 via-gold to-gold-bright" aria-hidden="true"></div>
+
+            <!-- Step 01: EXPERTISE -->
+            <div class="relative flex items-center bg-forest-mid/85 border border-white/10 px-3.5 py-2.5 shadow-xs">
+              <div class="absolute -left-7 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-forest-deep border border-gold text-gold-bright text-[10px] font-bold flex items-center justify-center shrink-0 z-10">
+                01
+              </div>
+              <div class="flex items-center gap-2.5 pl-1">
+                <svg class="w-4 h-4 text-gold-bright shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                  <rect x="3" y="7" width="18" height="13" rx="1.5"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2M12 12v3M3 13h18"/>
+                </svg>
+                <span class="text-xs font-semibold tracking-wider text-ivory">EXPERTISE</span>
+              </div>
+            </div>
+
+            <!-- Step 02: NEED -->
+            <div class="relative flex items-center bg-forest-mid/85 border border-white/10 px-3.5 py-2.5 shadow-xs">
+              <div class="absolute -left-7 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-forest-deep border border-gold text-gold-bright text-[10px] font-bold flex items-center justify-center shrink-0 z-10">
+                02
+              </div>
+              <div class="flex items-center gap-2.5 pl-1">
+                <svg class="w-4 h-4 text-gold-bright shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                  <circle cx="11" cy="11" r="7"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M20 20l-3.8-3.8"/>
+                </svg>
+                <span class="text-xs font-semibold tracking-wider text-ivory">NEED</span>
+              </div>
+            </div>
+
+            <!-- Step 03: CONTENT -->
+            <div class="relative flex items-center bg-forest-mid/85 border border-white/10 px-3.5 py-2.5 shadow-xs">
+              <div class="absolute -left-7 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-forest-deep border border-gold text-gold-bright text-[10px] font-bold flex items-center justify-center shrink-0 z-10">
+                03
+              </div>
+              <div class="flex items-center gap-2.5 pl-1">
+                <svg class="w-4 h-4 text-gold-bright shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l7-7 3 3-7 7-3-3z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2 2l7.5 7.5"/>
+                </svg>
+                <span class="text-xs font-semibold tracking-wider text-ivory">CONTENT</span>
+              </div>
+            </div>
+
+            <!-- Step 04: AUDIENCE -->
+            <div class="relative flex items-center bg-forest-mid/85 border border-white/10 px-3.5 py-2.5 shadow-xs">
+              <div class="absolute -left-7 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-forest-deep border border-gold text-gold-bright text-[10px] font-bold flex items-center justify-center shrink-0 z-10">
+                04
+              </div>
+              <div class="flex items-center gap-2.5 pl-1">
+                <svg class="w-4 h-4 text-gold-bright shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                  <circle cx="9" cy="8" r="3.5"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 19c0-3.1 2.7-5.5 6-5.5s6 2.4 6 5.5"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16 5.2a3.2 3.2 0 010 5.6M21 19c0-2.5-1.8-4.5-4.3-5.2"/>
+                </svg>
+                <span class="text-xs font-semibold tracking-wider text-ivory">AUDIENCE</span>
+              </div>
+            </div>
+
+            <!-- Step 05: TRUST -->
+            <div class="relative flex items-center bg-forest-mid/85 border border-white/10 px-3.5 py-2.5 shadow-xs">
+              <div class="absolute -left-7 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-forest-deep border border-gold text-gold-bright text-[10px] font-bold flex items-center justify-center shrink-0 z-10">
+                05
+              </div>
+              <div class="flex items-center gap-2.5 pl-1">
+                <svg class="w-4 h-4 text-gold-bright shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 3.5v5.5c0 5-3.4 8.3-8 9.8-4.6-1.5-8-4.8-8-9.8V6.5L12 3z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.2l2 2 4-4.2"/>
+                </svg>
+                <span class="text-xs font-semibold tracking-wider text-ivory">TRUST</span>
+              </div>
+            </div>
+
+            <!-- Step 06: OFFER -->
+            <div class="relative flex items-center bg-forest-mid/85 border border-white/10 px-3.5 py-2.5 shadow-xs">
+              <div class="absolute -left-7 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-forest-deep border border-gold text-gold-bright text-[10px] font-bold flex items-center justify-center shrink-0 z-10">
+                06
+              </div>
+              <div class="flex items-center gap-2.5 pl-1">
+                <svg class="w-4 h-4 text-gold-bright shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                  <rect x="3" y="8" width="18" height="4" rx="1"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 12v7a1.5 1.5 0 001.5 1.5h11A1.5 1.5 0 0019 19v-7M12 8v12.5"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8H8.5a2.5 2.5 0 110-5C11 3 12 8 12 8zm0 0h3.5a2.5 2.5 0 100-5C13 3 12 8 12 8z"/>
+                </svg>
+                <span class="text-xs font-semibold tracking-wider text-ivory">OFFER</span>
+              </div>
+            </div>
+
+            <!-- Step 07: MONEY (Destination Highlight) -->
+            <div class="relative flex items-center bg-gold text-forest-deep border border-gold-bright px-3.5 py-2.5 shadow-md">
+              <div class="absolute -left-7 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-forest-deep border-2 border-gold-bright text-gold-bright text-[10px] font-bold flex items-center justify-center shrink-0 z-10">
+                07
+              </div>
+              <div class="flex items-center gap-2.5 pl-1">
+                <svg class="w-4 h-4 text-forest-deep shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <ellipse cx="10" cy="7" rx="6" ry="2.8"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 7v5c0 1.5 2.7 2.8 6 2.8s6-1.3 6-2.8V7"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 12v5c0 1.5 2.7 2.8 6 2.8 1.5 0 2.9-.3 4-.7"/>
+                  <circle cx="17.5" cy="16.5" r="3.5"/>
+                </svg>
+                <span class="text-xs font-bold tracking-wider text-forest-deep">MONEY</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- DESKTOP LAYOUT: Continuous 7-Step Horizontal Stepper (hidden lg:flex) -->
+        <div class="hidden lg:flex flex-row items-center justify-between gap-1.5 font-sans">
+
+          <!-- Step 1: EXPERTISE -->
+          <div class="px-3.5 py-3 bg-forest-mid/80 border border-white/10 text-center flex-1">
+            <div class="text-[10px] text-gold-bright font-bold mb-1">01</div>
+            <svg class="w-4 h-4 mx-auto mb-1 text-gold-bright" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
               <rect x="3" y="7" width="18" height="13" rx="1.5"/>
               <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2M12 12v3M3 13h18"/>
             </svg>
             <span class="text-[11px] xl:text-xs font-semibold tracking-[0.14em] text-ivory whitespace-nowrap">EXPERTISE</span>
           </div>
 
-          <span class="text-gold font-semibold text-sm rotate-90 lg:rotate-0 select-none">→</span>
+          <span class="text-gold font-semibold text-sm select-none px-0.5">→</span>
 
-          <!-- Step 2: NEED (Search / Market Demand) -->
-          <div class="w-full lg:w-auto px-3.5 py-3 bg-forest-mid/80 border border-white/10 text-center">
-            <svg class="w-4 h-4 mx-auto mb-1.5 text-gold-bright" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+          <!-- Step 2: NEED -->
+          <div class="px-3.5 py-3 bg-forest-mid/80 border border-white/10 text-center flex-1">
+            <div class="text-[10px] text-gold-bright font-bold mb-1">02</div>
+            <svg class="w-4 h-4 mx-auto mb-1 text-gold-bright" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
               <circle cx="11" cy="11" r="7"/>
               <path stroke-linecap="round" stroke-linejoin="round" d="M20 20l-3.8-3.8"/>
             </svg>
             <span class="text-[11px] xl:text-xs font-semibold tracking-[0.14em] text-ivory whitespace-nowrap">NEED</span>
           </div>
 
-          <span class="text-gold font-semibold text-sm rotate-90 lg:rotate-0 select-none">→</span>
+          <span class="text-gold font-semibold text-sm select-none px-0.5">→</span>
 
-          <!-- Step 3: CONTENT (Fountain Pen / Writing) -->
-          <div class="w-full lg:w-auto px-3.5 py-3 bg-forest-mid/80 border border-white/10 text-center">
-            <svg class="w-4 h-4 mx-auto mb-1.5 text-gold-bright" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+          <!-- Step 3: CONTENT -->
+          <div class="px-3.5 py-3 bg-forest-mid/80 border border-white/10 text-center flex-1">
+            <div class="text-[10px] text-gold-bright font-bold mb-1">03</div>
+            <svg class="w-4 h-4 mx-auto mb-1 text-gold-bright" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l7-7 3 3-7 7-3-3z"/>
               <path stroke-linecap="round" stroke-linejoin="round" d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
               <path stroke-linecap="round" stroke-linejoin="round" d="M2 2l7.5 7.5"/>
@@ -690,11 +972,12 @@
             <span class="text-[11px] xl:text-xs font-semibold tracking-[0.14em] text-ivory whitespace-nowrap">CONTENT</span>
           </div>
 
-          <span class="text-gold font-semibold text-sm rotate-90 lg:rotate-0 select-none">→</span>
+          <span class="text-gold font-semibold text-sm select-none px-0.5">→</span>
 
-          <!-- Step 4: AUDIENCE (Readers / Community) -->
-          <div class="w-full lg:w-auto px-3.5 py-3 bg-forest-mid/80 border border-white/10 text-center">
-            <svg class="w-4 h-4 mx-auto mb-1.5 text-gold-bright" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+          <!-- Step 4: AUDIENCE -->
+          <div class="px-3.5 py-3 bg-forest-mid/80 border border-white/10 text-center flex-1">
+            <div class="text-[10px] text-gold-bright font-bold mb-1">04</div>
+            <svg class="w-4 h-4 mx-auto mb-1 text-gold-bright" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
               <circle cx="9" cy="8" r="3.5"/>
               <path stroke-linecap="round" stroke-linejoin="round" d="M3 19c0-3.1 2.7-5.5 6-5.5s6 2.4 6 5.5"/>
               <path stroke-linecap="round" stroke-linejoin="round" d="M16 5.2a3.2 3.2 0 010 5.6M21 19c0-2.5-1.8-4.5-4.3-5.2"/>
@@ -702,22 +985,24 @@
             <span class="text-[11px] xl:text-xs font-semibold tracking-[0.14em] text-ivory whitespace-nowrap">AUDIENCE</span>
           </div>
 
-          <span class="text-gold font-semibold text-sm rotate-90 lg:rotate-0 select-none">→</span>
+          <span class="text-gold font-semibold text-sm select-none px-0.5">→</span>
 
-          <!-- Step 5: TRUST (Shield Check / Credibility) -->
-          <div class="w-full lg:w-auto px-3.5 py-3 bg-forest-mid/80 border border-white/10 text-center">
-            <svg class="w-4 h-4 mx-auto mb-1.5 text-gold-bright" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+          <!-- Step 5: TRUST -->
+          <div class="px-3.5 py-3 bg-forest-mid/80 border border-white/10 text-center flex-1">
+            <div class="text-[10px] text-gold-bright font-bold mb-1">05</div>
+            <svg class="w-4 h-4 mx-auto mb-1 text-gold-bright" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 3.5v5.5c0 5-3.4 8.3-8 9.8-4.6-1.5-8-4.8-8-9.8V6.5L12 3z"/>
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.2l2 2 4-4.2"/>
             </svg>
             <span class="text-[11px] xl:text-xs font-semibold tracking-[0.14em] text-ivory whitespace-nowrap">TRUST</span>
           </div>
 
-          <span class="text-gold font-semibold text-sm rotate-90 lg:rotate-0 select-none">→</span>
+          <span class="text-gold font-semibold text-sm select-none px-0.5">→</span>
 
-          <!-- Step 6: OFFER (Packaged Value / Gift Box) -->
-          <div class="w-full lg:w-auto px-3.5 py-3 bg-forest-mid/80 border border-white/10 text-center">
-            <svg class="w-4 h-4 mx-auto mb-1.5 text-gold-bright" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+          <!-- Step 6: OFFER -->
+          <div class="px-3.5 py-3 bg-forest-mid/80 border border-white/10 text-center flex-1">
+            <div class="text-[10px] text-gold-bright font-bold mb-1">06</div>
+            <svg class="w-4 h-4 mx-auto mb-1 text-gold-bright" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
               <rect x="3" y="8" width="18" height="4" rx="1"/>
               <path stroke-linecap="round" stroke-linejoin="round" d="M5 12v7a1.5 1.5 0 001.5 1.5h11A1.5 1.5 0 0019 19v-7M12 8v12.5"/>
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 8H8.5a2.5 2.5 0 110-5C11 3 12 8 12 8zm0 0h3.5a2.5 2.5 0 100-5C13 3 12 8 12 8z"/>
@@ -725,11 +1010,12 @@
             <span class="text-[11px] xl:text-xs font-semibold tracking-[0.14em] text-ivory whitespace-nowrap">OFFER</span>
           </div>
 
-          <span class="text-gold font-semibold text-sm rotate-90 lg:rotate-0 select-none">→</span>
+          <span class="text-gold font-semibold text-sm select-none px-0.5">→</span>
 
-          <!-- Step 7: MONEY (Coins / Sustainable Side Income) -->
-          <div class="w-full lg:w-auto px-4 py-3 bg-gold text-forest-deep border border-gold-bright text-center shadow-lg">
-            <svg class="w-4 h-4 mx-auto mb-1.5 text-forest-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+          <!-- Step 7: MONEY -->
+          <div class="px-4 py-3 bg-gold text-forest-deep border border-gold-bright text-center shadow-lg flex-1">
+            <div class="text-[10px] text-forest-deep font-bold mb-1">07</div>
+            <svg class="w-4 h-4 mx-auto mb-1 text-forest-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <ellipse cx="10" cy="7" rx="6" ry="2.8"/>
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 7v5c0 1.5 2.7 2.8 6 2.8s6-1.3 6-2.8V7"/>
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 12v5c0 1.5 2.7 2.8 6 2.8 1.5 0 2.9-.3 4-.7"/>
@@ -739,10 +1025,11 @@
           </div>
 
         </div>
+
       </div>
 
-      <p class="text-center text-sm sm:text-base text-ivory/85 font-light mt-7 max-w-3xl mx-auto leading-relaxed">
-        Từ chuyên môn, nhu cầu thực tế đến nội dung, độc giả, sự tin tưởng, đề xuất và cơ hội tạo thu nhập.
+      <p class="text-center text-xs sm:text-sm lg:text-[15px] text-ivory/85 font-light mt-5 sm:mt-6 max-w-2xl mx-auto leading-relaxed">
+        Từ chuyên môn thực tế đến nội dung và cơ hội tạo thu nhập.
       </p>
 
     </div>
@@ -751,7 +1038,7 @@
   <!-- ======================================================================= -->
   <!-- SECTION 04: LIVE PRACTICE (Split Working Studio + Bullet Architecture)  -->
   <!-- ======================================================================= -->
-  <section id="thuc-hanh" class="bg-ivory editorial-grid-bg py-20 sm:py-28 lg:py-32 relative overflow-hidden" aria-labelledby="practice-heading">
+  <section id="thuc-hanh" class="bg-ivory editorial-grid-bg py-14 sm:py-20 lg:py-28 relative overflow-hidden" aria-labelledby="practice-heading">
     <div class="max-w-studio mx-auto px-6 lg:px-10">
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
@@ -768,15 +1055,11 @@
               <span class="w-1.5 h-1.5 rounded-full bg-gold"></span>
             </div>
 
-            <h2 id="practice-heading" class="font-serif text-3xl sm:text-4xl lg:text-[42px] font-semibold text-forest leading-[1.18] mb-4">
+            <h2 id="practice-heading" class="font-serif text-2xl sm:text-3xl lg:text-[34px] font-semibold text-forest leading-[1.2] mb-3 sm:mb-4">
               Thực hành trên chính câu chuyện của bạn
             </h2>
 
-            <p class="font-serif italic text-lg sm:text-xl text-gold-deep leading-relaxed mb-6">
-              Nếu bắt đầu làm Content từ những gì bạn đã biết, bạn sẽ bắt đầu từ đâu?
-            </p>
-
-            <p class="text-sm sm:text-[15.5px] text-ink-body leading-[1.82] mb-8">
+            <p class="text-xs sm:text-sm lg:text-[15px] text-ink-body leading-relaxed mb-6 sm:mb-8">
               Không dừng lại ở những khái niệm hay công thức chung, Anh Chu Quang Minh sẽ trực tiếp lựa chọn chuyên môn của 1–2 người tham dự để cùng phân tích ngay tại workshop.
             </p>
 
@@ -795,56 +1078,48 @@
         <!-- Right 7 Columns: Lead-in + 4 Bullet Questions + Closing Insight -->
         <div class="lg:col-span-7 lg:pt-6 reveal-up">
 
-          <div class="pl-0 sm:pl-11 mb-5">
-            <p class="text-sm sm:text-base font-semibold text-forest leading-relaxed">
+          <div class="mb-3.5 sm:mb-4">
+            <p class="text-xs sm:text-sm font-semibold text-forest leading-relaxed">
               Từ một lĩnh vực cụ thể, chúng ta sẽ thử tìm câu trả lời cho những câu hỏi:
             </p>
           </div>
 
-          <!-- Bullet List of 4 Practice Questions -->
-          <ul class="relative space-y-4 before:content-[''] before:absolute before:left-[15px] before:top-7 before:bottom-7 before:w-px before:bg-gold/50">
+          <!-- Editorial Inquiry List (Refined body text, NOT headlines) -->
+          <div class="space-y-2.5">
 
-            <li class="relative pl-11">
-              <span class="absolute left-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-gold border-4 border-ivory shadow-sm"></span>
-              <div class="bg-white border border-ink/10 border-l-4 border-l-gold px-6 py-5 sm:px-7 sm:py-6 shadow-[0_12px_32px_rgba(18,41,34,0.06)] hover:shadow-md transition-shadow">
-                <p class="font-serif text-lg sm:text-xl font-medium text-ink leading-snug">
-                  Kiến thức và kinh nghiệm nào có thể chuyển hóa thành Content?
-                </p>
-              </div>
-            </li>
+            <div class="bg-white border border-ink/10 border-l-[3px] border-l-gold p-3 sm:p-3.5 shadow-xs flex items-start gap-3">
+              <span class="text-xs font-semibold text-gold-deep pt-0.5 select-none shrink-0 font-sans">01</span>
+              <p class="text-xs sm:text-[13.5px] lg:text-[14px] text-ink font-normal leading-relaxed">
+                Kiến thức và kinh nghiệm nào có thể chuyển hóa thành Content?
+              </p>
+            </div>
 
-            <li class="relative pl-11">
-              <span class="absolute left-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-gold border-4 border-ivory shadow-sm"></span>
-              <div class="bg-white border border-ink/10 border-l-4 border-l-gold px-6 py-5 sm:px-7 sm:py-6 shadow-[0_12px_32px_rgba(18,41,34,0.06)] hover:shadow-md transition-shadow">
-                <p class="font-serif text-lg sm:text-xl font-medium text-ink leading-snug">
-                  Ai là người thực sự cần những nội dung đó?
-                </p>
-              </div>
-            </li>
+            <div class="bg-white border border-ink/10 border-l-[3px] border-l-gold p-3 sm:p-3.5 shadow-xs flex items-start gap-3">
+              <span class="text-xs font-semibold text-gold-deep pt-0.5 select-none shrink-0 font-sans">02</span>
+              <p class="text-xs sm:text-[13.5px] lg:text-[14px] text-ink font-normal leading-relaxed">
+                Ai là người thực sự cần những nội dung đó?
+              </p>
+            </div>
 
-            <li class="relative pl-11">
-              <span class="absolute left-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-gold border-4 border-ivory shadow-sm"></span>
-              <div class="bg-white border border-ink/10 border-l-4 border-l-gold px-6 py-5 sm:px-7 sm:py-6 shadow-[0_12px_32px_rgba(18,41,34,0.06)] hover:shadow-md transition-shadow">
-                <p class="font-serif text-lg sm:text-xl font-medium text-ink leading-snug">
-                  Nên lựa chọn chủ đề và hình thức thể hiện như thế nào?
-                </p>
-              </div>
-            </li>
+            <div class="bg-white border border-ink/10 border-l-[3px] border-l-gold p-3 sm:p-3.5 shadow-xs flex items-start gap-3">
+              <span class="text-xs font-semibold text-gold-deep pt-0.5 select-none shrink-0 font-sans">03</span>
+              <p class="text-xs sm:text-[13.5px] lg:text-[14px] text-ink font-normal leading-relaxed">
+                Nên lựa chọn chủ đề và hình thức thể hiện như thế nào?
+              </p>
+            </div>
 
-            <li class="relative pl-11">
-              <span class="absolute left-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-gold border-4 border-ivory shadow-sm"></span>
-              <div class="bg-white border border-ink/10 border-l-4 border-l-gold px-6 py-5 sm:px-7 sm:py-6 shadow-[0_12px_32px_rgba(18,41,34,0.06)] hover:shadow-md transition-shadow">
-                <p class="font-serif text-lg sm:text-xl font-medium text-ink leading-snug">
-                  Làm sao để nội dung tạo ra giá trị và có thể kết nối với sản phẩm, dịch vụ phù hợp?
-                </p>
-              </div>
-            </li>
+            <div class="bg-white border border-ink/10 border-l-[3px] border-l-gold p-3 sm:p-3.5 shadow-xs flex items-start gap-3">
+              <span class="text-xs font-semibold text-gold-deep pt-0.5 select-none shrink-0 font-sans">04</span>
+              <p class="text-xs sm:text-[13.5px] lg:text-[14px] text-ink font-normal leading-relaxed">
+                Làm sao để nội dung tạo ra giá trị và có thể kết nối với sản phẩm, dịch vụ phù hợp?
+              </p>
+            </div>
 
-          </ul>
+          </div>
 
           <!-- Closing Remark Box -->
-          <div class="mt-8 ml-0 sm:ml-11 bg-forest text-ivory p-6 sm:p-7 border-l-4 border-gold shadow-lg">
-            <p class="text-sm sm:text-[15.5px] text-ivory/95 leading-[1.8] font-light">
+          <div class="mt-5 sm:mt-6 bg-forest text-ivory p-4 sm:p-5 border-l-4 border-gold shadow-md">
+            <p class="text-xs sm:text-[13.5px] text-ivory/95 leading-relaxed font-light">
               Một cơ hội để bạn quan sát cách tư duy, phân tích và từng bước tìm ra hướng phát triển Content từ chính công việc mình đang làm.
             </p>
           </div>
@@ -859,7 +1134,7 @@
   <!-- ======================================================================= -->
   <!-- SECTION 05: COMMUNITY (Mái Ấm Thiên Thần Documentary Gallery & Story)   -->
   <!-- ======================================================================= -->
-  <section id="cong-dong" class="bg-ivory-sand py-20 sm:py-28 lg:py-32 border-t border-ink/10 relative overflow-hidden" aria-labelledby="community-heading">
+  <section id="cong-dong" class="bg-ivory-sand py-14 sm:py-20 lg:py-28 border-t border-ink/10 relative overflow-hidden" aria-labelledby="community-heading">
     <div class="max-w-studio mx-auto px-6 lg:px-10">
 
       <!-- Section Heading with Giant Watermark 04 -->
@@ -872,17 +1147,17 @@
             <span class="h-px w-10 bg-gold"></span>
             <span class="w-1.5 h-1.5 rounded-full bg-gold"></span>
           </div>
-          <h2 id="community-heading" class="font-serif text-2xl sm:text-4xl lg:text-[44px] font-semibold text-forest leading-[1.16] sm:whitespace-nowrap">
+          <h2 id="community-heading" class="font-serif text-xl sm:text-2xl lg:text-3xl font-semibold text-forest leading-[1.2] sm:whitespace-nowrap">
             Và một hành động vì cộng đồng...
           </h2>
         </div>
       </div>
 
       <!-- ROW 1: Masterpiece 4-Children Original Photo + Compact Wide Story Panel -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-10 reveal-up">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch mb-8 sm:mb-10 reveal-up">
 
         <!-- Left 6 Columns: Original Locked Photo (4 Children) - 100% Uncropped, Unfiltered, No Overlay -->
-        <div class="lg:col-span-6 bg-white p-3 sm:p-4 border border-ink/10 shadow-[0_22px_50px_rgba(18,41,34,0.1)] flex items-center justify-center">
+        <div class="lg:col-span-6 bg-white p-3 sm:p-4 border border-ink/10 shadow-[0_16px_40px_rgba(18,41,34,0.08)] flex items-center justify-center">
           <img
             src="mai-am-thien-than.png"
             alt="Mái ấm Thiên Thần, TP. Thủ Đức"
@@ -892,18 +1167,12 @@
         </div>
 
         <!-- Right 6 Columns: Sincere Philanthropic Context (Wider Measure -> Fewer Lines) -->
-        <div class="lg:col-span-6 bg-white px-6 py-6 sm:px-7 sm:py-6 border border-ink/10 border-t-4 border-t-gold shadow-lg flex flex-col justify-between gap-4">
-          <p class="text-[13.5px] sm:text-[14px] text-ink-body leading-[1.68]">
+        <div class="lg:col-span-6 bg-white px-5 py-5 sm:px-6 sm:py-6 border border-ink/10 border-t-4 border-t-gold shadow-md flex flex-col justify-center gap-3 sm:gap-4">
+          <p class="text-xs sm:text-[13.5px] lg:text-[14px] text-ink-body leading-[1.75]">
             Workshop được tổ chức với tinh thần phi lợi nhuận. Bên cạnh việc cùng khám phá những cơ hội mới từ chuyên môn, một phần chương trình là để kết nối và sẻ chia với các em nhỏ tại Mái ấm Thiên Thần, TP. Thủ Đức.
           </p>
 
-          <div class="bg-ivory border-l-4 border-forest px-5 py-3">
-            <p class="font-serif text-base sm:text-[17px] font-semibold text-forest sm:whitespace-nowrap">
-              Tham dự workshop hoàn toàn miễn phí.
-            </p>
-          </div>
-
-          <p class="text-[13.5px] sm:text-[14px] text-ink-body leading-[1.68]">
+          <p class="text-xs sm:text-[13.5px] lg:text-[14px] text-ink-body leading-[1.75]">
             Vào cuối chương trình sẽ có hoạt động gây quỹ tự nguyện dành cho những người tham dự muốn đóng góp. Việc ủng hộ hoàn toàn tùy tâm, không có mức đóng góp tối thiểu và không ảnh hưởng đến quyền tham dự workshop.
           </p>
         </div>
@@ -912,9 +1181,9 @@
 
       <!-- ROW 2: Authentic Documentary Photo Triptych of Mái Ấm Thiên Thần, TP. Thủ Đức -->
       <!-- Real journalism photos of Mái ấm Thiên Thần (Long Trường, TP. Thủ Đức), uncropped, no fabricated captions -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 reveal-up">
+      <div class="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 mb-8 sm:mb-10 reveal-up">
 
-        <div class="bg-white p-2.5 sm:p-3 border border-ink/10 shadow-md hover:-translate-y-1 transition-transform duration-300">
+        <div class="bg-white p-1.5 sm:p-2.5 md:p-3 border border-ink/10 shadow-xs md:shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
           <div class="w-full aspect-[4/3] bg-ivory flex items-center justify-center overflow-hidden">
             <img
               src="images/mai-am-thien-than-sinh-hoat.jpg"
@@ -925,7 +1194,7 @@
           </div>
         </div>
 
-        <div class="bg-white p-2.5 sm:p-3 border border-ink/10 shadow-md hover:-translate-y-1 transition-transform duration-300">
+        <div class="bg-white p-1.5 sm:p-2.5 md:p-3 border border-ink/10 shadow-xs md:shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
           <div class="w-full aspect-[4/3] bg-ivory flex items-center justify-center overflow-hidden">
             <img
               src="images/mai-am-thien-than-cham-soc.jpg"
@@ -936,7 +1205,7 @@
           </div>
         </div>
 
-        <div class="bg-white p-2.5 sm:p-3 border border-ink/10 shadow-md hover:-translate-y-1 transition-transform duration-300">
+        <div class="bg-white p-1.5 sm:p-2.5 md:p-3 border border-ink/10 shadow-xs md:shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
           <div class="w-full aspect-[4/3] bg-ivory flex items-center justify-center overflow-hidden">
             <img
               src="images/mai-am-thien-than-khong-gian.jpg"
@@ -950,17 +1219,17 @@
       </div>
 
       <!-- ROW 3: Deep Botanical Forest Poetic Finale Banner (Inspired by KidHope) -->
-      <div class="bg-forest text-ivory p-8 sm:p-12 lg:p-14 shadow-2xl border border-gold/25 relative overflow-hidden reveal-up">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
+      <div class="bg-forest text-ivory p-6 sm:p-8 lg:p-10 shadow-xl border border-gold/25 relative overflow-hidden reveal-up">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center relative z-10">
 
-          <div class="lg:col-span-6 text-base sm:text-lg text-ivory/90 leading-[1.85] font-light">
+          <div class="lg:col-span-6 text-xs sm:text-sm lg:text-[15px] text-ivory/90 leading-[1.8] font-light">
             <p>
               Chúng mình tin rằng những điều có giá trị không chỉ nằm ở kiến thức được chia sẻ, mà còn ở cách chúng ta cùng nhau lan tỏa những điều tốt đẹp.
             </p>
           </div>
 
-          <div class="lg:col-span-6 lg:border-l border-gold/40 lg:pl-10 pt-6 lg:pt-0 border-t lg:border-t-0">
-            <div class="font-serif italic text-xl sm:text-2xl text-ivory leading-relaxed space-y-3">
+          <div class="lg:col-span-6 lg:border-l border-gold/40 lg:pl-8 pt-4 lg:pt-0 border-t lg:border-t-0">
+            <div class="font-serif italic text-sm sm:text-base lg:text-[17px] text-ivory leading-relaxed space-y-2">
               <p>Một buổi tối cùng nhau gieo viết.</p>
               <p>Một cơ hội khám phá hướng đi mới từ chuyên môn.</p>
               <p class="not-italic font-semibold text-gold-bright">Và thêm một điều tử tế được sẻ chia.</p>
@@ -976,7 +1245,7 @@
   <!-- ======================================================================= -->
   <!-- SECTION 06: REGISTRATION (Split Studio Invitation + Architectural Form) -->
   <!-- ======================================================================= -->
-  <section id="dang-ky" class="bg-ivory editorial-grid-bg py-20 sm:py-28 lg:py-32 border-t border-ink/10 relative overflow-hidden" aria-labelledby="register-heading">
+  <section id="dang-ky" class="bg-ivory editorial-grid-bg py-14 sm:py-20 lg:py-28 border-t border-ink/10 relative overflow-hidden" aria-labelledby="register-heading">
     <div class="max-w-studio mx-auto px-6 lg:px-10">
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
@@ -993,11 +1262,11 @@
               <span class="w-1.5 h-1.5 rounded-full bg-gold"></span>
             </div>
 
-            <h2 id="register-heading" class="font-serif text-3xl sm:text-4xl lg:text-[44px] font-semibold text-forest leading-[1.16] mb-6">
+            <h2 id="register-heading" class="font-serif text-2xl sm:text-3xl lg:text-[34px] font-semibold text-forest leading-[1.2] mb-4">
               Hãy bắt đầu từ những gì bạn đã biết.
             </h2>
 
-            <div class="space-y-4 text-[15px] sm:text-base text-ink-body leading-[1.82] mb-9">
+            <div class="space-y-3 text-xs sm:text-sm lg:text-[15px] text-ink-body leading-relaxed mb-6 sm:mb-8">
               <p>
                 Bạn không cần phải có sẵn một ý tưởng Content hoàn chỉnh hay một kế hoạch kinh doanh cụ thể.
               </p>
@@ -1020,20 +1289,20 @@
 
         <!-- Right 7 Columns: Precision Architectural Registration Card -->
         <div class="lg:col-span-7 reveal-up">
-          <div class="bg-white border border-ink/10 border-t-4 border-t-forest p-7 sm:p-10 lg:p-12 shadow-[0_24px_60px_rgba(9,23,19,0.1)]">
+          <div class="bg-white border border-ink/10 border-t-4 border-t-forest p-6 sm:p-8 lg:p-10 shadow-[0_20px_50px_rgba(9,23,19,0.08)]">
 
-            <div class="flex items-center justify-between pb-4 border-b border-ink/10 mb-7">
-              <h3 class="text-xs sm:text-[13px] uppercase tracking-[0.22em] text-forest font-bold">
-                THÔNG TIN ĐĂNG KÝ
+            <div class="flex items-center justify-between pb-3.5 border-b border-ink/10 mb-6">
+              <h3 class="text-base sm:text-lg font-serif font-semibold text-forest tracking-normal">
+                Thông tin đăng ký
               </h3>
               <span class="w-2 h-2 bg-gold inline-block"></span>
             </div>
 
-            <form id="registrationForm" class="space-y-5" novalidate>
+            <form id="registrationForm" class="space-y-4 sm:space-y-5" novalidate>
 
               <!-- Field 1: Họ và tên* -->
               <div>
-                <label for="fullName" class="block text-xs uppercase tracking-[0.12em] font-semibold text-ink mb-2">
+                <label for="fullName" class="block text-xs sm:text-[13px] font-medium text-ink mb-1.5">
                   Họ và tên*
                 </label>
                 <input
@@ -1041,16 +1310,21 @@
                   id="fullName"
                   name="fullName"
                   required
+                  aria-required="true"
+                  aria-describedby="nameError"
                   autocomplete="name"
-                  class="input-studio w-full px-4 py-3.5 text-sm text-ink rounded-none"
+                  class="input-studio w-full px-3.5 py-3 text-sm text-ink rounded-none"
                 >
-                <p class="hidden text-xs text-red-700 mt-1.5" id="nameError">Vui lòng nhập họ và tên.</p>
+                <p class="hidden text-xs text-red-700 mt-1.5 items-center gap-1.5" id="nameError" role="alert" aria-live="polite">
+                  <svg class="w-3.5 h-3.5 shrink-0 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  <span>Vui lòng nhập họ và tên.</span>
+                </p>
               </div>
 
               <!-- 2-Column Row for Email* & Số điện thoại / Zalo* -->
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                 <div>
-                  <label for="email" class="block text-xs uppercase tracking-[0.12em] font-semibold text-ink mb-2">
+                  <label for="email" class="block text-xs sm:text-[13px] font-medium text-ink mb-1.5">
                     Email*
                   </label>
                   <input
@@ -1058,14 +1332,19 @@
                     id="email"
                     name="email"
                     required
+                    aria-required="true"
+                    aria-describedby="emailError"
                     autocomplete="email"
-                    class="input-studio w-full px-4 py-3.5 text-sm text-ink rounded-none"
+                    class="input-studio w-full px-3.5 py-3 text-sm text-ink rounded-none"
                   >
-                  <p class="hidden text-xs text-red-700 mt-1.5" id="emailError">Vui lòng nhập địa chỉ email hợp lệ.</p>
+                  <p class="hidden text-xs text-red-700 mt-1.5 items-center gap-1.5" id="emailError" role="alert" aria-live="polite">
+                    <svg class="w-3.5 h-3.5 shrink-0 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    <span>Vui lòng nhập địa chỉ email hợp lệ.</span>
+                  </p>
                 </div>
 
                 <div>
-                  <label for="phone" class="block text-xs uppercase tracking-[0.12em] font-semibold text-ink mb-2">
+                  <label for="phone" class="block text-xs sm:text-[13px] font-medium text-ink mb-1.5">
                     Số điện thoại / Zalo*
                   </label>
                   <input
@@ -1073,16 +1352,21 @@
                     id="phone"
                     name="phone"
                     required
+                    aria-required="true"
+                    aria-describedby="phoneError"
                     autocomplete="tel"
-                    class="input-studio w-full px-4 py-3.5 text-sm text-ink rounded-none"
+                    class="input-studio w-full px-3.5 py-3 text-sm text-ink rounded-none"
                   >
-                  <p class="hidden text-xs text-red-700 mt-1.5" id="phoneError">Vui lòng nhập số điện thoại / Zalo.</p>
+                  <p class="hidden text-xs text-red-700 mt-1.5 items-center gap-1.5" id="phoneError" role="alert" aria-live="polite">
+                    <svg class="w-3.5 h-3.5 shrink-0 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    <span>Vui lòng nhập số điện thoại / Zalo.</span>
+                  </p>
                 </div>
               </div>
 
               <!-- Field 4: Lĩnh vực công việc hoặc chuyên môn hiện tại* -->
               <div>
-                <label for="profession" class="block text-xs uppercase tracking-[0.12em] font-semibold text-ink mb-2">
+                <label for="profession" class="block text-xs sm:text-[13px] font-medium text-ink mb-1.5">
                   Lĩnh vực công việc hoặc chuyên môn hiện tại*
                 </label>
                 <input
@@ -1090,14 +1374,19 @@
                   id="profession"
                   name="profession"
                   required
-                  class="input-studio w-full px-4 py-3.5 text-sm text-ink rounded-none"
+                  aria-required="true"
+                  aria-describedby="professionError"
+                  class="input-studio w-full px-3.5 py-3 text-sm text-ink rounded-none"
                 >
-                <p class="hidden text-xs text-red-700 mt-1.5" id="professionError">Vui lòng nhập lĩnh vực công việc hoặc chuyên môn hiện tại.</p>
+                <p class="hidden text-xs text-red-700 mt-1.5 items-center gap-1.5" id="professionError" role="alert" aria-live="polite">
+                  <svg class="w-3.5 h-3.5 shrink-0 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  <span>Vui lòng nhập lĩnh vực công việc hoặc chuyên môn hiện tại.</span>
+                </p>
               </div>
 
               <!-- Field 5: Bạn mong muốn nhận được điều gì sau workshop?* -->
               <div>
-                <label for="expectation" class="block text-xs uppercase tracking-[0.12em] font-semibold text-ink mb-2">
+                <label for="expectation" class="block text-xs sm:text-[13px] font-medium text-ink mb-1.5">
                   Bạn mong muốn nhận được điều gì sau workshop?*
                 </label>
                 <textarea
@@ -1105,40 +1394,62 @@
                   name="expectation"
                   rows="3"
                   required
-                  class="input-studio w-full px-4 py-3.5 text-sm text-ink rounded-none"
+                  aria-required="true"
+                  aria-describedby="expectationError"
+                  class="input-studio w-full px-3.5 py-3 text-sm text-ink rounded-none"
                 ></textarea>
-                <p class="hidden text-xs text-red-700 mt-1.5" id="expectationError">Vui lòng chia sẻ mong muốn của bạn.</p>
+                <p class="hidden text-xs text-red-700 mt-1.5 items-center gap-1.5" id="expectationError" role="alert" aria-live="polite">
+                  <svg class="w-3.5 h-3.5 shrink-0 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  <span>Vui lòng chia sẻ mong muốn của bạn.</span>
+                </p>
               </div>
 
               <!-- Field 6: Câu hỏi bạn mong muốn diễn giả giải đáp (không bắt buộc) -->
               <div>
-                <label for="question" class="block text-xs uppercase tracking-[0.12em] font-semibold text-ink mb-2">
+                <label for="question" class="block text-xs sm:text-[13px] font-medium text-ink mb-1.5">
                   Câu hỏi bạn mong muốn diễn giả giải đáp (không bắt buộc)
                 </label>
                 <textarea
                   id="question"
                   name="question"
                   rows="2"
-                  class="input-studio w-full px-4 py-3.5 text-sm text-ink rounded-none"
+                  class="input-studio w-full px-3.5 py-3 text-sm text-ink rounded-none"
                 ></textarea>
               </div>
 
+              <!-- Honeypot anti-spam field (hidden from real users) -->
+              <div class="hidden" aria-hidden="true" style="display:none;">
+                <label for="website_hp">Website</label>
+                <input type="text" id="website_hp" name="website_hp" tabindex="-1" autocomplete="off">
+              </div>
+
               <!-- Submit CTA: [ Xác nhận tham dự ] -->
-              <div class="pt-3">
+              <div class="pt-2">
                 <button
                   type="submit"
                   id="submitBtn"
-                  class="btn-gold-solid w-full py-4 text-xs uppercase flex items-center justify-center gap-2 cursor-pointer rounded-none disabled:opacity-70 disabled:cursor-not-allowed"
+                  class="btn-gold-solid w-full py-3.5 sm:py-4 text-sm sm:text-[15px] font-semibold tracking-wide flex items-center justify-center gap-2 cursor-pointer rounded-none disabled:opacity-70 disabled:cursor-not-allowed min-h-[48px] shadow-sm hover:shadow-md transition-all"
                 >
                   <span id="btnText">Xác nhận tham dự</span>
-                  <span id="btnSpinner" class="hidden">
-                    <svg class="animate-spin h-4 w-4 text-forest-deep" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <span id="btnSpinner" class="hidden flex items-center gap-2">
+                    <svg class="animate-spin h-4 w-4 text-forest-deep" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
                       <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                       <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
                     </svg>
+                    <span>Đang ghi nhận đăng ký...</span>
                   </span>
                 </button>
-                <p id="submitError" class="hidden text-xs text-red-700 text-center mt-2.5"></p>
+                <p id="submitError" class="hidden text-xs text-red-700 text-center mt-2" role="alert" aria-live="polite"></p>
+              </div>
+
+              <!-- Privacy & Trust Reassurance -->
+              <div class="mt-4 pt-3.5 border-t border-ink/10 text-center">
+                <div class="flex items-center justify-center gap-1.5 text-[11.5px] text-ink-muted">
+                  <svg class="w-3.5 h-3.5 text-gold-deep flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                  </svg>
+                  <span>Cam kết bảo mật 100% • Dữ liệu chỉ dùng thông tin phục vụ workshop</span>
+                </div>
               </div>
 
             </form>
@@ -1150,6 +1461,8 @@
 
     </div>
   </section>
+
+  </main>
 
   <!-- ======================================================================= -->
   <!-- SECTION 07: ARCHITECTURAL FOOTER                                        -->
@@ -1223,11 +1536,11 @@
   </div>
 
   <!-- ======================================================================= -->
-  <!-- INTERACTION & VALIDATION SCRIPT                                         -->
+  <!-- INTERACTION & VALIDATION SCRIPT (Production Grade)                      -->
   <!-- ======================================================================= -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      // Smooth Scroll Reveal
+      // 1. Progressive Enhancement: Smooth Scroll Reveal with Fallback
       const revealEls = document.querySelectorAll('.reveal-up');
       if ('IntersectionObserver' in window) {
         document.documentElement.classList.add('js-ready');
@@ -1238,19 +1551,25 @@
               observer.unobserve(entry.target);
             }
           });
-        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
         revealEls.forEach((el) => observer.observe(el));
+
+        // Safety fallback: ensure all content becomes visible within 2.5s if observer fails
+        setTimeout(() => {
+          document.querySelectorAll('.reveal-up:not(.is-visible)').forEach((el) => {
+            el.classList.add('is-visible');
+          });
+        }, 2500);
       } else {
         revealEls.forEach((el) => el.classList.add('is-visible'));
       }
 
       // =====================================================================
-      // CẤU HÌNH ĐỒNG BỘ GOOGLE SHEET (GOOGLE APPS SCRIPT WEB APP URL)
-      // Dán đường dẫn https://script.google.com/macros/s/.../exec vào bên dưới:
+      // GOOGLE APPS SCRIPT WEB APP INTEGRATION (Production URL)
       // =====================================================================
-      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxD-kCUrilNf5U5iilRBZKu3JNIhBHOOyagBVs9Djb2kB_wtVzNQVkd4HGbh5n5vYOl/exec';
+      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyPOXJtFhVD8doempLQWbnXRT6H4EAdkpsTuLXPgZsIPzE3FMXWAZd2YwwgVy1UAEod/exec';
 
-      // Form Validation & Google Sheets Sync
+      // 2. DOM Elements
       const form = document.getElementById('registrationForm');
       const submitBtn = document.getElementById('submitBtn');
       const submitError = document.getElementById('submitError');
@@ -1260,29 +1579,73 @@
       const btnText = document.getElementById('btnText');
       const btnSpinner = document.getElementById('btnSpinner');
 
+      let isSubmitting = false;
+      let lastFocusedElement = null;
+
+      // 3. Validation Helpers (Vietnamese Phone & Standard Email)
+      function validateVnPhone(phoneStr) {
+        if (!phoneStr) return false;
+        // Clean spaces, hyphens, dots, parentheses
+        const cleaned = phoneStr.replace(/[\s.\-()]/g, '');
+        // Supports 0, 84, +84 followed by modern 10-digit mobile carrier prefixes (3, 5, 7, 8, 9)
+        const vnRegex = /^(?:(?:\+84|84)0?|0)(3[2-9]|5[25689]|7[06-9]|8[1-9]|9[0-9])[0-9]{7}$/;
+        return vnRegex.test(cleaned);
+      }
+
+      function validateEmail(emailStr) {
+        if (!emailStr) return false;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
+        return emailRegex.test(emailStr.trim());
+      }
+
       const fields = [
         { id: 'fullName', err: 'nameError', check: (v) => v.trim().length >= 2 },
-        { id: 'email', err: 'emailError', check: (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) },
-        { id: 'phone', err: 'phoneError', check: (v) => v.trim().length >= 8 },
+        { id: 'email', err: 'emailError', check: validateEmail },
+        { id: 'phone', err: 'phoneError', check: validateVnPhone },
         { id: 'profession', err: 'professionError', check: (v) => v.trim().length >= 2 },
         { id: 'expectation', err: 'expectationError', check: (v) => v.trim().length >= 2 }
       ];
 
+      // 4. Real-time Field Input Listeners
       fields.forEach(({ id, err, check }) => {
         const input = document.getElementById(id);
         const errEl = document.getElementById(err);
+        if (!input || !errEl) return;
+
         input.addEventListener('input', () => {
           if (check(input.value)) {
             errEl.classList.add('hidden');
-            input.classList.remove('border-red-600');
+            errEl.classList.remove('flex');
+            input.classList.remove('is-invalid');
+            input.removeAttribute('aria-invalid');
           }
           submitError.classList.add('hidden');
         });
+
+        input.addEventListener('blur', () => {
+          if (input.value.trim().length > 0 && !check(input.value)) {
+            errEl.classList.remove('hidden');
+            errEl.classList.add('flex');
+            input.classList.add('is-invalid');
+            input.setAttribute('aria-invalid', 'true');
+          }
+        });
       });
 
+      // 5. Form Submission Handler
       form.addEventListener('submit', async function (e) {
         e.preventDefault();
         submitError.classList.add('hidden');
+
+        // Prevent double submit
+        if (isSubmitting) return;
+
+        // Anti-spam Honeypot Check
+        const honeypot = document.getElementById('website_hp');
+        if (honeypot && honeypot.value.trim() !== '') {
+          // Silently ignore bot submission
+          return;
+        }
 
         let valid = true;
         let firstInvalid = null;
@@ -1290,14 +1653,20 @@
         fields.forEach(({ id, err, check }) => {
           const input = document.getElementById(id);
           const errEl = document.getElementById(err);
+          if (!input || !errEl) return;
+
           if (!check(input.value)) {
             errEl.classList.remove('hidden');
-            input.classList.add('border-red-600');
+            errEl.classList.add('flex');
+            input.classList.add('is-invalid');
+            input.setAttribute('aria-invalid', 'true');
             if (!firstInvalid) firstInvalid = input;
             valid = false;
           } else {
             errEl.classList.add('hidden');
-            input.classList.remove('border-red-600');
+            errEl.classList.remove('flex');
+            input.classList.remove('is-invalid');
+            input.removeAttribute('aria-invalid');
           }
         });
 
@@ -1306,17 +1675,22 @@
           return;
         }
 
+        // Set Loading State & Lock
+        isSubmitting = true;
         submitBtn.disabled = true;
         btnText.classList.add('hidden');
         btnSpinner.classList.remove('hidden');
 
+        const rawPhone = document.getElementById('phone').value.trim();
         const payload = {
           fullName: document.getElementById('fullName').value.trim(),
-          email: document.getElementById('email').value.trim(),
-          phone: document.getElementById('phone').value.trim(),
+          email: document.getElementById('email').value.trim().toLowerCase(),
+          phone: rawPhone.replace(/[\s.\-()]/g, ''),
           profession: document.getElementById('profession').value.trim(),
           expectation: document.getElementById('expectation').value.trim(),
-          question: document.getElementById('question').value.trim()
+          question: document.getElementById('question').value.trim(),
+          website_hp: honeypot ? honeypot.value.trim() : '',
+          submittedAt: new Date().toISOString()
         };
 
         try {
@@ -1330,44 +1704,91 @@
               body: JSON.stringify(payload)
             });
 
-            if (!response.ok) {
-              throw new Error('HTTP ' + response.status);
+            let result = null;
+            try {
+              result = await response.json();
+            } catch (_) {
+              // Graceful fallback: If Apps Script 302 redirected successfully, status 200
+              if (response.ok || response.status === 200) {
+                result = { status: 'success' };
+              }
             }
 
-            const result = await response.json();
-            if (result.status !== 'success') {
+            if (result && result.status !== 'success') {
               throw new Error(result.message || 'Không thể lưu thông tin đăng ký.');
             }
           } else {
-            console.warn('[Google Sheets Sync] Chưa gắn GOOGLE_SCRIPT_URL trong index.html.');
+            // Local fallback simulation
             const saved = JSON.parse(sessionStorage.getItem('workshopRegistrations') || '[]');
-            saved.push({ ...payload, submittedAt: new Date().toISOString() });
+            saved.push(payload);
             sessionStorage.setItem('workshopRegistrations', JSON.stringify(saved));
           }
 
+          // Show confirmation modal
           modalGreeting.textContent = 'Cảm ơn ' + payload.fullName + ' đã đăng ký tham dự workshop.';
-          modal.classList.remove('hidden');
-          modal.classList.add('flex');
+          openModal();
           form.reset();
+
         } catch (err) {
-          submitError.textContent = 'Không thể gửi đăng ký lúc này. Vui lòng kiểm tra kết nối và thử lại.';
+          submitError.textContent = 'Không thể gửi đăng ký lúc này. Vui lòng kiểm tra kết nối mạng hoặc thử lại.';
           submitError.classList.remove('hidden');
           console.error('[Google Sheets Sync Error]', err);
         } finally {
+          isSubmitting = false;
           submitBtn.disabled = false;
           btnText.classList.remove('hidden');
           btnSpinner.classList.add('hidden');
         }
       });
 
+      // 6. Accessible Modal Management (Focus Trap, Escape Key, Scroll Lock)
+      function openModal() {
+        lastFocusedElement = document.activeElement;
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+        closeModalBtn.focus();
+      }
+
       function closeModal() {
         modal.classList.add('hidden');
         modal.classList.remove('flex');
+        document.body.style.overflow = '';
+        if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+          lastFocusedElement.focus();
+        } else {
+          submitBtn.focus();
+        }
       }
 
       closeModalBtn.addEventListener('click', closeModal);
       modal.addEventListener('click', (e) => {
         if (e.target === modal) closeModal();
+      });
+
+      // Keyboard Trap & Escape Listener
+      document.addEventListener('keydown', (e) => {
+        if (modal.classList.contains('hidden')) return;
+
+        if (e.key === 'Escape') {
+          closeModal();
+          return;
+        }
+
+        if (e.key === 'Tab') {
+          const focusable = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+          if (focusable.length === 0) return;
+          const first = focusable[0];
+          const last = focusable[focusable.length - 1];
+
+          if (e.shiftKey && document.activeElement === first) {
+            last.focus();
+            e.preventDefault();
+          } else if (!e.shiftKey && document.activeElement === last) {
+            first.focus();
+            e.preventDefault();
+          }
+        }
       });
     });
   </script>
